@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ws5-Hi-9iw">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Game Mode View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="GameModeViewController" id="Y6W-OH-hqX" customClass="GameModeViewController" customModule="tic_tac_toe_ios_multiplayer_game" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="44" translatesAutoresizingMaskIntoConstraints="NO" id="G5Y-t9-N3g">
+                                <rect key="frame" x="50" y="210" width="275" height="392"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Qg-IH-2mS" customClass="GradientViewUIButton" customModule="tic_tac_toe_ios_multiplayer_game" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="275" height="65"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="65" id="Cak-xU-yHi"/>
+                                        </constraints>
+                                        <color key="tintColor" systemColor="systemBackgroundColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Single Player">
+                                            <fontDescription key="titleFontDescription" type="boldSystem" pointSize="27"/>
+                                        </buttonConfiguration>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="startColor">
+                                                <color key="value" red="1" green="0.0" blue="0.37132979412468115" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="endColor">
+                                                <color key="value" red="1" green="0.0" blue="0.92187769883343962" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="26"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="onSinglePlayerClick:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="qCY-bR-X2J"/>
+                                            <segue destination="M3W-TB-6Sd" kind="show" id="po0-t6-oHv"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VGe-G9-l7h" customClass="GradientViewUIButton" customModule="tic_tac_toe_ios_multiplayer_game" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="109" width="275" height="65"/>
+                                        <color key="tintColor" systemColor="systemBackgroundColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Multiplayer">
+                                            <fontDescription key="titleFontDescription" type="boldSystem" pointSize="34"/>
+                                        </buttonConfiguration>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="endColor">
+                                                <color key="value" systemColor="systemOrangeColor"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="startColor">
+                                                <color key="value" red="0.93107521939439841" green="0.0" blue="0.25155234823421557" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="26"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="onMultiplayerClick:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="OQb-NL-PDB"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mnx-SS-I9m" customClass="GradientViewUIButton" customModule="tic_tac_toe_ios_multiplayer_game" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="218" width="275" height="65"/>
+                                        <color key="tintColor" systemColor="systemBackgroundColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Local Multiplayer">
+                                            <fontDescription key="titleFontDescription" type="boldSystem" pointSize="24"/>
+                                        </buttonConfiguration>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="startColor">
+                                                <color key="value" systemColor="systemGreenColor"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="endColor">
+                                                <color key="value" systemColor="systemTealColor"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="26"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="onLocalMultiplayerClick:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="wYh-yz-QDw"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lOB-kf-Rq5" customClass="GradientViewUIButton" customModule="tic_tac_toe_ios_multiplayer_game" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="327" width="275" height="65"/>
+                                        <color key="tintColor" systemColor="systemBackgroundColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Themes">
+                                            <fontDescription key="titleFontDescription" type="boldSystem" pointSize="34"/>
+                                        </buttonConfiguration>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="startColor">
+                                                <color key="value" systemColor="systemIndigoColor"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="endColor">
+                                                <color key="value" systemColor="systemYellowColor"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="26"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="onThemesClick:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="DeW-Xd-Y3a"/>
+                                            <segue destination="2Fc-ut-nrD" kind="show" id="biZ-p2-jxJ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="lOB-kf-Rq5" firstAttribute="height" secondItem="Mnx-SS-I9m" secondAttribute="height" id="0nb-ua-7pV"/>
+                                    <constraint firstItem="VGe-G9-l7h" firstAttribute="height" secondItem="0Qg-IH-2mS" secondAttribute="height" id="Y81-0l-hCD"/>
+                                    <constraint firstItem="Mnx-SS-I9m" firstAttribute="height" secondItem="VGe-G9-l7h" secondAttribute="height" id="ifD-Sq-rIy"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="G5Y-t9-N3g" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="Jzg-8A-Dqt"/>
+                            <constraint firstItem="G5Y-t9-N3g" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="50" id="SlJ-CD-oFQ"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="G5Y-t9-N3g" secondAttribute="trailing" constant="50" id="uA0-6a-GXq"/>
+                            <constraint firstItem="G5Y-t9-N3g" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="yWl-81-gos"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="362-8C-h6E"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1125" y="127.5"/>
+        </scene>
+        <!--GameDifficultyLevelsViewController-->
+        <scene sceneID="PE9-Vc-d1C">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="GameDifficultyLevelsViewController" storyboardName="GameDifficultyLevelsViewController" referencedIdentifier="GameDifficultyLevelsViewController" id="M3W-TB-6Sd" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="coc-tQ-6wW"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X2P-Bl-XWg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1921" y="-146"/>
+        </scene>
+        <!--OnlineWelcomeViewController-->
+        <scene sceneID="npa-dh-Uqd">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="OnlineWelcomeViewController" storyboardName="OnlineWelcomeViewController" referencedIdentifier="OnlineWelcomeViewController" id="h77-2n-ct7" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="UQy-ty-gkd"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9ND-5y-uIK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1969" y="21"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="8Yx-ft-GID">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="2Fc-ut-nrD" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2LN-yd-A1h">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="b6n-sX-bjD"/>
+                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="qQG-uR-aHl"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rdM-Xh-HFz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1969" y="630"/>
+        </scene>
+        <!--Game Mode Navigation Controller-->
+        <scene sceneID="F1e-qK-hlm">
+            <objects>
+                <navigationController storyboardIdentifier="GameModeNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="Ws5-Hi-9iw" customClass="GameModeNavigationController" customModule="tic_tac_toe_ios_multiplayer_game" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="R4Z-qW-uKD">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Y6W-OH-hqX" kind="relationship" relationship="rootViewController" id="BFZ-fc-qfT"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="406-au-iDj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="127.5" y="127.5"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="0Qg-IH-2mS">
+            <size key="intrinsicContentSize" width="187.33333333333334" height="46.333333333333336"/>
+        </designable>
+        <designable name="Mnx-SS-I9m">
+            <size key="intrinsicContentSize" width="214.66666666666666" height="42.666666666666664"/>
+        </designable>
+        <designable name="VGe-G9-l7h">
+            <size key="intrinsicContentSize" width="201.66666666666666" height="54.666666666666664"/>
+        </designable>
+        <designable name="lOB-kf-Rq5">
+            <size key="intrinsicContentSize" width="151.33333333333334" height="54.666666666666664"/>
+        </designable>
+    </designables>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

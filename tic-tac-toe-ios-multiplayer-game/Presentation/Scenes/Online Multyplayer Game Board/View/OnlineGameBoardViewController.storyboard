@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Online Game Board View Controller-->
+        <scene sceneID="hGZ-qM-bfi">
+            <objects>
+                <viewController storyboardIdentifier="OnlineGameBoardViewController" id="LJq-dj-R4w" customClass="OnlineGameBoardViewController" customModule="tic_tac_toe_ios_multiplayer_game" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pkb-iY-TJB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k4l-MG-uan" userLabel="View bot">
+                                <rect key="frame" x="239.5" y="88" width="154.5" height="225"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="easy_Bot" translatesAutoresizingMaskIntoConstraints="NO" id="76q-VZ-Elt" customClass="RoundedImageView" customModule="tic_tac_toe_ios_multiplayer_game" customModuleProvider="target">
+                                        <rect key="frame" x="22" y="10" width="110.5" height="110.5"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" systemColor="systemTealColor"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="3"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Easy Bot" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OXd-bB-pc5">
+                                        <rect key="frame" x="0.0" y="125.5" width="154.5" height="32"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="toe_x" translatesAutoresizingMaskIntoConstraints="NO" id="xF1-VE-iuT">
+                                        <rect key="frame" x="1" y="167.5" width="152" height="57.5"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="separatorColor"/>
+                                <constraints>
+                                    <constraint firstItem="OXd-bB-pc5" firstAttribute="width" secondItem="k4l-MG-uan" secondAttribute="width" id="738-PU-MQF"/>
+                                    <constraint firstItem="76q-VZ-Elt" firstAttribute="height" secondItem="k4l-MG-uan" secondAttribute="height" multiplier="0.490196" id="Cyk-Z0-knK"/>
+                                    <constraint firstAttribute="bottom" secondItem="xF1-VE-iuT" secondAttribute="bottom" id="DD9-lx-i3A"/>
+                                    <constraint firstItem="OXd-bB-pc5" firstAttribute="leading" secondItem="k4l-MG-uan" secondAttribute="leading" id="NOy-p0-lyM"/>
+                                    <constraint firstItem="76q-VZ-Elt" firstAttribute="width" secondItem="k4l-MG-uan" secondAttribute="width" multiplier="0.714286" id="Tg5-bR-2IJ"/>
+                                    <constraint firstAttribute="trailing" secondItem="OXd-bB-pc5" secondAttribute="trailing" id="UPM-Hs-84u"/>
+                                    <constraint firstItem="76q-VZ-Elt" firstAttribute="top" secondItem="k4l-MG-uan" secondAttribute="top" constant="10" id="Zqy-FY-aEO"/>
+                                    <constraint firstItem="OXd-bB-pc5" firstAttribute="top" secondItem="76q-VZ-Elt" secondAttribute="bottom" constant="5" id="fad-Z5-9sc"/>
+                                    <constraint firstItem="76q-VZ-Elt" firstAttribute="centerX" secondItem="k4l-MG-uan" secondAttribute="centerX" id="gQq-VA-xbT"/>
+                                    <constraint firstItem="xF1-VE-iuT" firstAttribute="top" secondItem="OXd-bB-pc5" secondAttribute="bottom" constant="10" id="nwn-Ge-eI2"/>
+                                    <constraint firstItem="OXd-bB-pc5" firstAttribute="height" secondItem="k4l-MG-uan" secondAttribute="height" multiplier="0.142157" id="v7r-3H-eXp"/>
+                                    <constraint firstItem="xF1-VE-iuT" firstAttribute="centerX" secondItem="k4l-MG-uan" secondAttribute="centerX" id="yfx-49-vYp"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rtS-T7-EbJ" userLabel="View you">
+                                <rect key="frame" x="20" y="88" width="153" height="224"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="p_trofile_1" translatesAutoresizingMaskIntoConstraints="NO" id="uoq-on-RNR" customClass="RoundedImageView" customModule="tic_tac_toe_ios_multiplayer_game" customModuleProvider="target">
+                                        <rect key="frame" x="21.5" y="10" width="110.5" height="110.5"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" systemColor="systemGreenColor"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="3"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1an-iB-I1S">
+                                        <rect key="frame" x="0.0" y="125.5" width="153" height="32"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="24"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="toe_o" translatesAutoresizingMaskIntoConstraints="NO" id="vNi-Tx-gPw">
+                                        <rect key="frame" x="49" y="167.5" width="55" height="56.5"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="separatorColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="vNi-Tx-gPw" secondAttribute="bottom" id="AJg-A7-n0v"/>
+                                    <constraint firstItem="uoq-on-RNR" firstAttribute="width" secondItem="rtS-T7-EbJ" secondAttribute="width" multiplier="0.721154" id="NOF-sN-tow"/>
+                                    <constraint firstItem="1an-iB-I1S" firstAttribute="top" secondItem="uoq-on-RNR" secondAttribute="bottom" constant="5" id="QXn-Cc-M3a"/>
+                                    <constraint firstItem="uoq-on-RNR" firstAttribute="centerX" secondItem="rtS-T7-EbJ" secondAttribute="centerX" id="TAg-m3-JmJ"/>
+                                    <constraint firstItem="vNi-Tx-gPw" firstAttribute="width" secondItem="rtS-T7-EbJ" secondAttribute="width" multiplier="0.360577" id="VqG-Us-ufL"/>
+                                    <constraint firstItem="1an-iB-I1S" firstAttribute="height" secondItem="rtS-T7-EbJ" secondAttribute="height" multiplier="0.142857" id="XOh-Xv-xHp"/>
+                                    <constraint firstAttribute="trailing" secondItem="1an-iB-I1S" secondAttribute="trailing" id="YLb-AJ-tdl"/>
+                                    <constraint firstItem="vNi-Tx-gPw" firstAttribute="centerX" secondItem="rtS-T7-EbJ" secondAttribute="centerX" id="bzb-wX-fJU"/>
+                                    <constraint firstItem="uoq-on-RNR" firstAttribute="top" secondItem="rtS-T7-EbJ" secondAttribute="top" constant="10" id="gjX-WR-Fqh"/>
+                                    <constraint firstItem="uoq-on-RNR" firstAttribute="height" secondItem="rtS-T7-EbJ" secondAttribute="height" multiplier="0.492611" id="hkB-7h-8wr"/>
+                                    <constraint firstItem="1an-iB-I1S" firstAttribute="leading" secondItem="rtS-T7-EbJ" secondAttribute="leading" id="iCV-14-3JA"/>
+                                    <constraint firstItem="vNi-Tx-gPw" firstAttribute="top" secondItem="1an-iB-I1S" secondAttribute="bottom" constant="10" id="yLw-0f-PN8"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="g_board" translatesAutoresizingMaskIntoConstraints="NO" id="uFa-b4-S8j">
+                                <rect key="frame" x="0.0" y="428" width="414" height="414"/>
+                            </imageView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="uhV-Ba-0LK" userLabel="Collection View game play">
+                                <rect key="frame" x="0.0" y="428" width="414" height="414"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="displayP3"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="D21-kn-hJ6">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Es8-IU-3yW"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="uFa-b4-S8j" firstAttribute="height" secondItem="pkb-iY-TJB" secondAttribute="width" id="0SR-gU-Ut7"/>
+                            <constraint firstItem="k4l-MG-uan" firstAttribute="width" secondItem="rtS-T7-EbJ" secondAttribute="width" multiplier="1.00962" id="3sI-HY-fbg"/>
+                            <constraint firstItem="k4l-MG-uan" firstAttribute="height" secondItem="rtS-T7-EbJ" secondAttribute="height" multiplier="1.00493" id="5l3-Ug-xOp"/>
+                            <constraint firstItem="Es8-IU-3yW" firstAttribute="trailing" secondItem="uhV-Ba-0LK" secondAttribute="trailing" id="GKq-oK-WBm"/>
+                            <constraint firstItem="uhV-Ba-0LK" firstAttribute="width" secondItem="uFa-b4-S8j" secondAttribute="width" id="Go4-XA-bWg"/>
+                            <constraint firstItem="uFa-b4-S8j" firstAttribute="leading" secondItem="Es8-IU-3yW" secondAttribute="leading" id="HEL-4j-QOX"/>
+                            <constraint firstItem="Es8-IU-3yW" firstAttribute="trailing" secondItem="uFa-b4-S8j" secondAttribute="trailing" id="PHj-Fq-WJr"/>
+                            <constraint firstItem="Es8-IU-3yW" firstAttribute="trailing" secondItem="k4l-MG-uan" secondAttribute="trailing" constant="20" id="SIJ-Gb-RjL"/>
+                            <constraint firstItem="rtS-T7-EbJ" firstAttribute="top" secondItem="Es8-IU-3yW" secondAttribute="top" id="Si6-7q-DSa"/>
+                            <constraint firstItem="k4l-MG-uan" firstAttribute="top" secondItem="Es8-IU-3yW" secondAttribute="top" id="U6r-xN-ffp"/>
+                            <constraint firstItem="uhV-Ba-0LK" firstAttribute="leading" secondItem="Es8-IU-3yW" secondAttribute="leading" id="ayG-CM-hzu"/>
+                            <constraint firstItem="rtS-T7-EbJ" firstAttribute="width" secondItem="pkb-iY-TJB" secondAttribute="width" multiplier="0.37" id="edZ-nt-qxB"/>
+                            <constraint firstItem="Es8-IU-3yW" firstAttribute="bottom" secondItem="uhV-Ba-0LK" secondAttribute="bottom" constant="20" id="ixH-bp-0D3"/>
+                            <constraint firstItem="uFa-b4-S8j" firstAttribute="width" secondItem="pkb-iY-TJB" secondAttribute="width" id="qgf-tL-gNv"/>
+                            <constraint firstItem="uhV-Ba-0LK" firstAttribute="height" secondItem="uFa-b4-S8j" secondAttribute="height" id="uaG-hZ-14x"/>
+                            <constraint firstItem="rtS-T7-EbJ" firstAttribute="height" secondItem="pkb-iY-TJB" secondAttribute="height" multiplier="0.25" id="wT3-HX-Luy"/>
+                            <constraint firstItem="rtS-T7-EbJ" firstAttribute="leading" secondItem="Es8-IU-3yW" secondAttribute="leading" constant="20" id="xYc-fG-ruv"/>
+                            <constraint firstItem="Es8-IU-3yW" firstAttribute="bottom" secondItem="uFa-b4-S8j" secondAttribute="bottom" constant="20" id="y07-4P-x1n"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="E1o-cg-An9"/>
+                    <connections>
+                        <outlet property="CollectionViewGamePlay" destination="uhV-Ba-0LK" id="kIT-FF-vuB"/>
+                        <outlet property="appUserProfile" destination="uoq-on-RNR" id="4t6-bc-ahV"/>
+                        <outlet property="appUserToe" destination="vNi-Tx-gPw" id="bXP-6G-Q2Y"/>
+                        <outlet property="onlinePlayerName" destination="OXd-bB-pc5" id="YBh-W2-XTC"/>
+                        <outlet property="onlinePlayerProfile" destination="76q-VZ-Elt" id="FOW-Le-KZB"/>
+                        <outlet property="onlinePlayerToe" destination="xF1-VE-iuT" id="6u5-Tn-P47"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1dl-6B-lQL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2860.8695652173915" y="127.23214285714285"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="MJT-CG-xVP">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="IWB-pW-I1Q" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="WnO-jr-URL">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="LJq-dj-R4w" kind="relationship" relationship="rootViewController" id="tLO-P6-F7E"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lks-QV-yRK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1950.7246376811595" y="127.23214285714285"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="76q-VZ-Elt">
+            <size key="intrinsicContentSize" width="80" height="80"/>
+        </designable>
+        <designable name="uoq-on-RNR">
+            <size key="intrinsicContentSize" width="512" height="512"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="easy_Bot" width="80" height="80"/>
+        <image name="g_board" width="1017" height="1027"/>
+        <image name="p_trofile_1" width="512" height="512"/>
+        <image name="toe_o" width="152" height="152"/>
+        <image name="toe_x" width="152" height="152"/>
+        <systemColor name="separatorColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.28999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

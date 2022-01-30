@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>656343322060-ujbgtitljkoft97513ktvk0n0mcmtslu.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.656343322060-ujbgtitljkoft97513ktvk0n0mcmtslu</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>656343322060-je99tt6io24erkpufkrm5e8fp4f6bv7a.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAS3eaogG4ruOwZYFQwB8qmYMjz5LEYszY</string>
+	<key>GCM_SENDER_ID</key>
+	<string>656343322060</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>ika.ikakooo.pro.tic-tac-toe-ios-multiplayer-game</string>
+	<key>PROJECT_ID</key>
+	<string>notesandroidapp</string>
+	<key>STORAGE_BUCKET</key>
+	<string>notesandroidapp.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:656343322060:ios:f9bbf4133a49958cafa169</string>
+	<key>DATABASE_URL</key>
+	<string>https://notesandroidapp.firebaseio.com</string>
+</dict>
+</plist>

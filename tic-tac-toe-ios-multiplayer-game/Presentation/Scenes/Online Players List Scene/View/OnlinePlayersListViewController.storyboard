@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Online Players-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="OnlinePlayersListViewController" id="Y6W-OH-hqX" customClass="OnlinePlayersListViewController" customModule="tic_tac_toe_ios_multiplayer_game" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Your Nik name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Hcw-Je-yRc" customClass="FloatingLabelInput" customModule="tic_tac_toe_ios_multiplayer_game" customModuleProvider="target">
+                                <rect key="frame" x="24" y="93" width="270.5" height="34"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="_placeholder" value="Your Nik name"/>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rMX-0u-joC">
+                                <rect key="frame" x="294.5" y="94.5" width="95.5" height="31"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="highlighter" catalog="system" title="Edit Nik"/>
+                                <connections>
+                                    <action selector="onEditClick:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="ppK-lC-4pv"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S9l-Jw-vxr">
+                                <rect key="frame" x="24" y="137" width="366" height="2"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="2" id="hVc-0F-YiD"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="U0J-a6-tqE">
+                                <rect key="frame" x="24" y="149" width="366" height="713"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="separatorColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="sectionIndexColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="sectionIndexTrackingBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" red="0.79226829889999995" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="U0J-a6-tqE" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="24" id="CUg-iP-uBi"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="rMX-0u-joC" secondAttribute="trailing" constant="24" id="Cu5-ci-es4"/>
+                            <constraint firstItem="Hcw-Je-yRc" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="24" id="FQh-zc-eoN"/>
+                            <constraint firstItem="U0J-a6-tqE" firstAttribute="top" secondItem="S9l-Jw-vxr" secondAttribute="bottom" constant="10" id="Fom-G0-tfX"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="U0J-a6-tqE" secondAttribute="trailing" constant="24" id="JRA-lg-qEi"/>
+                            <constraint firstItem="U0J-a6-tqE" firstAttribute="bottom" secondItem="vDu-zF-Fre" secondAttribute="bottom" id="OUz-SJ-SrR"/>
+                            <constraint firstItem="rMX-0u-joC" firstAttribute="leading" secondItem="Hcw-Je-yRc" secondAttribute="trailing" id="bsG-Xd-cn5"/>
+                            <constraint firstItem="Hcw-Je-yRc" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="5" id="gHg-t0-mPX"/>
+                            <constraint firstItem="S9l-Jw-vxr" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="24" id="kZO-6N-V8S"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="S9l-Jw-vxr" secondAttribute="trailing" constant="24" id="nHK-yp-B5f"/>
+                            <constraint firstItem="S9l-Jw-vxr" firstAttribute="top" secondItem="Hcw-Je-yRc" secondAttribute="bottom" constant="10" id="qc4-hz-oMa"/>
+                            <constraint firstItem="rMX-0u-joC" firstAttribute="centerY" secondItem="Hcw-Je-yRc" secondAttribute="centerY" id="ql0-3z-ZfZ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Online Players" id="EwW-mf-0Gs">
+                        <barButtonItem key="rightBarButtonItem" title="log out" image="rectangle.portrait.and.arrow.right" catalog="system" landscapeImage="rectangle.portrait.and.arrow.right" largeContentSizeImage="rectangle.portrait.and.arrow.right" id="Dgh-dh-kAX">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="onLogautClick:" destination="Y6W-OH-hqX" id="fQH-hv-ggs"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="niknameInputField" destination="Hcw-Je-yRc" id="R4e-fw-Jfr"/>
+                        <outlet property="onlinePlayersTableView" destination="U0J-a6-tqE" id="BgQ-6e-4Ie"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2791.304347826087" y="73.660714285714278"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="fvs-Dl-yWw">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="wJj-1f-bLv" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="EiR-Wd-Xsh">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Y6W-OH-hqX" kind="relationship" relationship="rootViewController" id="wFq-3M-9gQ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TvK-VI-iD3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1881.1594202898552" y="73.660714285714278"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="highlighter" catalog="system" width="128" height="119"/>
+        <image name="rectangle.portrait.and.arrow.right" catalog="system" width="128" height="108"/>
+    </resources>
+</document>

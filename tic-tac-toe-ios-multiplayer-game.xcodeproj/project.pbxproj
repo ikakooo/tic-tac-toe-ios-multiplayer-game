@@ -1,0 +1,1367 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3B0056A82752F2B400D88381 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0056A72752F2B400D88381 /* LogInViewController.swift */; };
+		3B0056AA2752F2BF00D88381 /* LogInViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B0056A92752F2BF00D88381 /* LogInViewController.storyboard */; };
+		3B198CB3275237AF006B61C8 /* DialogAlertsForActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B198CB2275237AF006B61C8 /* DialogAlertsForActions.swift */; };
+		3B198CB827525D36006B61C8 /* OnlineWelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B198CB727525D36006B61C8 /* OnlineWelcomeViewController.swift */; };
+		3B198CBA27525D48006B61C8 /* OnlineWelcomeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B198CB927525D47006B61C8 /* OnlineWelcomeViewController.storyboard */; };
+		3B436DC72757E02E00D6D8AE /* OnlineGameBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B436DC62757E02E00D6D8AE /* OnlineGameBoardViewController.swift */; };
+		3B436DC92757E03B00D6D8AE /* OnlineGameBoardViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B436DC82757E03B00D6D8AE /* OnlineGameBoardViewController.storyboard */; };
+		3B436DCB2757ED8600D6D8AE /* OnlineGameBoardDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B436DCA2757ED8600D6D8AE /* OnlineGameBoardDataService.swift */; };
+		3B436DCD2757EDC400D6D8AE /* OnlineGameBoardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B436DCC2757EDC400D6D8AE /* OnlineGameBoardViewModel.swift */; };
+		3B5F0E7727559C6B008DAFAC /* OnlinePlayersListNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5F0E7627559C6B008DAFAC /* OnlinePlayersListNavigationController.swift */; };
+		3B72019E274807B1009903A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B72019D274807B1009903A5 /* AppDelegate.swift */; };
+		3B7201A0274807B1009903A5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B72019F274807B1009903A5 /* SceneDelegate.swift */; };
+		3B7201A8274807B1009903A5 /* tic_tac_toe_ios_multiplayer_game.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3B7201A6274807B1009903A5 /* tic_tac_toe_ios_multiplayer_game.xcdatamodeld */; };
+		3B7201AA274807B3009903A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B7201A9274807B3009903A5 /* Assets.xcassets */; };
+		3B7201AD274807B3009903A5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B7201AB274807B3009903A5 /* LaunchScreen.storyboard */; };
+		3B7201B8274807B4009903A5 /* tic_tac_toe_ios_multiplayer_gameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7201B7274807B4009903A5 /* tic_tac_toe_ios_multiplayer_gameTests.swift */; };
+		3B7201C2274807B4009903A5 /* tic_tac_toe_ios_multiplayer_gameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7201C1274807B4009903A5 /* tic_tac_toe_ios_multiplayer_gameUITests.swift */; };
+		3B7201C4274807B4009903A5 /* tic_tac_toe_ios_multiplayer_gameUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7201C3274807B4009903A5 /* tic_tac_toe_ios_multiplayer_gameUITestsLaunchTests.swift */; };
+		3B7201DF27480EE6009903A5 /* ToesRainUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7201DE27480EE6009903A5 /* ToesRainUIView.swift */; };
+		3B7201E227481301009903A5 /* SplashScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7201E127481301009903A5 /* SplashScreenViewController.swift */; };
+		3B7201E42748130D009903A5 /* SplashScreenViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B7201E32748130D009903A5 /* SplashScreenViewController.storyboard */; };
+		3B7201E627481A87009903A5 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7201E527481A87009903A5 /* UIView+Extensions.swift */; };
+		3B7201E9274856F5009903A5 /* GameModeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7201E8274856F5009903A5 /* GameModeViewController.swift */; };
+		3B7201EB27485703009903A5 /* GameModeNavigationController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B7201EA27485703009903A5 /* GameModeNavigationController.storyboard */; };
+		3B7201ED274864E9009903A5 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7201EC274864E9009903A5 /* GradientView.swift */; };
+		3BAB58B92748F8E300508CBF /* GameModeNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BAB58B82748F8E300508CBF /* GameModeNavigationController.swift */; };
+		3BAB58C12749036D00508CBF /* SplashScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BAB58C02749036D00508CBF /* SplashScreenViewModel.swift */; };
+		3BAB58C32749038C00508CBF /* SplashScreenDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BAB58C22749038C00508CBF /* SplashScreenDataService.swift */; };
+		3BAB58CA274921F100508CBF /* GameDifficultyLevelsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BAB58C9274921F100508CBF /* GameDifficultyLevelsViewController.storyboard */; };
+		3BAB58CC2749315B00508CBF /* GameDifficultyLevelsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BAB58CB2749315B00508CBF /* GameDifficultyLevelsViewController.swift */; };
+		3BAB58CE2749432600508CBF /* ImgViewsCustomisations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BAB58CD2749432600508CBF /* ImgViewsCustomisations.swift */; };
+		3BAB58D027496B9B00508CBF /* GameBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BAB58CF27496B9B00508CBF /* GameBoardViewController.swift */; };
+		3BAB58D227496BA900508CBF /* GameBoardViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BAB58D127496BA900508CBF /* GameBoardViewController.storyboard */; };
+		3BBC2873274981F400179C8E /* GameModeDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBC2872274981F400179C8E /* GameModeDataService.swift */; };
+		3BBC28752749833D00179C8E /* UICollectionViewCell+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBC28742749833D00179C8E /* UICollectionViewCell+Extension.swift */; };
+		3BBC28772749835C00179C8E /* UICollectionView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBC28762749835C00179C8E /* UICollectionView+Extension.swift */; };
+		3BBC28792749861500179C8E /* GameDifficultyLevelsDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBC28782749861500179C8E /* GameDifficultyLevelsDataService.swift */; };
+		3BBC287B274999EB00179C8E /* GameBoardDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBC287A274999EB00179C8E /* GameBoardDataService.swift */; };
+		3BBC287D27499B4700179C8E /* GameBoardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBC287C27499B4700179C8E /* GameBoardViewModel.swift */; };
+		3BBC28812749ACC500179C8E /* ToeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBC287F2749ACC500179C8E /* ToeCollectionViewCell.swift */; };
+		3BBC28822749ACC500179C8E /* ToeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3BBC28802749ACC500179C8E /* ToeCollectionViewCell.xib */; };
+		3BD24062274DC34000B0B661 /* GameBoardBotProfileSetUpDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD24061274DC34000B0B661 /* GameBoardBotProfileSetUpDataService.swift */; };
+		3BEB8E3A2753BEB7009A3DFF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3BEB8E392753BEB7009A3DFF /* GoogleService-Info.plist */; };
+		3BEB8E3D2753C1B4009A3DFF /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 3BEB8E3C2753C1B4009A3DFF /* FirebaseAnalytics */; };
+		3BEB8E3F2753C1B4009A3DFF /* FirebaseAnalyticsSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 3BEB8E3E2753C1B4009A3DFF /* FirebaseAnalyticsSwift-Beta */; };
+		3BEB8E412753C1B4009A3DFF /* FirebaseAppCheck in Frameworks */ = {isa = PBXBuildFile; productRef = 3BEB8E402753C1B4009A3DFF /* FirebaseAppCheck */; };
+		3BEB8E432753C1B4009A3DFF /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 3BEB8E422753C1B4009A3DFF /* FirebaseAuth */; };
+		3BEB8E452753C1B4009A3DFF /* FirebaseAuthCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 3BEB8E442753C1B4009A3DFF /* FirebaseAuthCombine-Community */; };
+		3BEB8E472753C1B4009A3DFF /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = 3BEB8E462753C1B4009A3DFF /* FirebaseCrashlytics */; };
+		3BEB8E492753C1B4009A3DFF /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 3BEB8E482753C1B4009A3DFF /* FirebaseDatabase */; };
+		3BEB8E4B2753C1B4009A3DFF /* FirebaseDatabaseSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 3BEB8E4A2753C1B4009A3DFF /* FirebaseDatabaseSwift-Beta */; };
+		3BEB8E4D2753C1B4009A3DFF /* FirebaseDynamicLinks in Frameworks */ = {isa = PBXBuildFile; productRef = 3BEB8E4C2753C1B4009A3DFF /* FirebaseDynamicLinks */; };
+		3BEB8E4F2753C1B4009A3DFF /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 3BEB8E4E2753C1B4009A3DFF /* FirebaseFirestore */; };
+		3BEB8E512753C1B4009A3DFF /* FirebaseFirestoreCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 3BEB8E502753C1B4009A3DFF /* FirebaseFirestoreCombine-Community */; };
+		3BEB8E532753C1B4009A3DFF /* FirebaseFirestoreSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 3BEB8E522753C1B4009A3DFF /* FirebaseFirestoreSwift-Beta */; };
+		3BEB8E552753C1B4009A3DFF /* FirebaseInAppMessaging-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 3BEB8E542753C1B4009A3DFF /* FirebaseInAppMessaging-Beta */; };
+		3BEB8E572753C1B4009A3DFF /* FirebaseInAppMessagingSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 3BEB8E562753C1B4009A3DFF /* FirebaseInAppMessagingSwift-Beta */; };
+		3BEB8E592753C1B4009A3DFF /* FirebaseInstallations in Frameworks */ = {isa = PBXBuildFile; productRef = 3BEB8E582753C1B4009A3DFF /* FirebaseInstallations */; };
+		3BEB8E5B2753C1B4009A3DFF /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 3BEB8E5A2753C1B4009A3DFF /* FirebaseMessaging */; };
+		3BEB8E5D2753C1B4009A3DFF /* FirebasePerformance in Frameworks */ = {isa = PBXBuildFile; productRef = 3BEB8E5C2753C1B4009A3DFF /* FirebasePerformance */; };
+		3BEB8E5F2753C1B4009A3DFF /* FirebaseRemoteConfig in Frameworks */ = {isa = PBXBuildFile; productRef = 3BEB8E5E2753C1B4009A3DFF /* FirebaseRemoteConfig */; };
+		3BEB8E612753C1B4009A3DFF /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 3BEB8E602753C1B4009A3DFF /* FirebaseStorage */; };
+		3BEB8E632753C1B4009A3DFF /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 3BEB8E622753C1B4009A3DFF /* FirebaseStorageCombine-Community */; };
+		3BEB8E652753C1B4009A3DFF /* FirebaseStorageSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 3BEB8E642753C1B4009A3DFF /* FirebaseStorageSwift-Beta */; };
+		3BEB8E682753C842009A3DFF /* OnlinePlayersListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEB8E672753C842009A3DFF /* OnlinePlayersListViewController.swift */; };
+		3BEB8E6A2753C84C009A3DFF /* OnlinePlayersListViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BEB8E692753C84C009A3DFF /* OnlinePlayersListViewController.storyboard */; };
+		3BEB8E6E2753CD0D009A3DFF /* CreateAccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEB8E6D2753CD0D009A3DFF /* CreateAccountViewModel.swift */; };
+		3BEB8E702753CD34009A3DFF /* CreateAccountDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEB8E6F2753CD34009A3DFF /* CreateAccountDataService.swift */; };
+		3BEB8E722753D307009A3DFF /* LogInViewDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEB8E712753D307009A3DFF /* LogInViewDataService.swift */; };
+		3BEB8E742753FBE3009A3DFF /* Validator+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEB8E732753FBE3009A3DFF /* Validator+Extensions.swift */; };
+		3BF01C2C2752944200E18835 /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF01C2B2752944200E18835 /* CreateAccountViewController.swift */; };
+		3BF01C2E2752944E00E18835 /* CreateAccountViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BF01C2D2752944E00E18835 /* CreateAccountViewController.storyboard */; };
+		3BF01C302752BC3500E18835 /* FloatingLabelInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF01C2F2752BC3500E18835 /* FloatingLabelInput.swift */; };
+		3BFCC78927564F2B00A5CF53 /* UDManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFCC78827564F2B00A5CF53 /* UDManager.swift */; };
+		3BFCC78B2756509C00A5CF53 /* PlayerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFCC78A2756509C00A5CF53 /* PlayerModel.swift */; };
+		3BFCC78D2756AD0800A5CF53 /* OnlinePlayersListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFCC78C2756AD0800A5CF53 /* OnlinePlayersListViewModel.swift */; };
+		3BFCC78F2756AD4200A5CF53 /* OnlinePlayersListDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFCC78E2756AD4200A5CF53 /* OnlinePlayersListDataService.swift */; };
+		3BFCC7912756B50C00A5CF53 /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFCC7902756B50C00A5CF53 /* UITableView+Extension.swift */; };
+		3BFCC7932756B51F00A5CF53 /* UITableViewCell+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFCC7922756B51F00A5CF53 /* UITableViewCell+Extension.swift */; };
+		3BFCC79B2756C84800A5CF53 /* OnlineStatusCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFCC7992756C84800A5CF53 /* OnlineStatusCell.swift */; };
+		3BFCC79C2756C84800A5CF53 /* OnlineStatusCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3BFCC79A2756C84800A5CF53 /* OnlineStatusCell.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3B7201B4274807B4009903A5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3B720192274807B1009903A5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3B720199274807B1009903A5;
+			remoteInfo = "tic-tac-toe-ios-multiplayer-game";
+		};
+		3B7201BE274807B4009903A5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3B720192274807B1009903A5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3B720199274807B1009903A5;
+			remoteInfo = "tic-tac-toe-ios-multiplayer-game";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3B0056A72752F2B400D88381 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		3B0056A92752F2BF00D88381 /* LogInViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LogInViewController.storyboard; sourceTree = "<group>"; };
+		3B198CB2275237AF006B61C8 /* DialogAlertsForActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialogAlertsForActions.swift; sourceTree = "<group>"; };
+		3B198CB727525D36006B61C8 /* OnlineWelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlineWelcomeViewController.swift; sourceTree = "<group>"; };
+		3B198CB927525D47006B61C8 /* OnlineWelcomeViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OnlineWelcomeViewController.storyboard; sourceTree = "<group>"; };
+		3B436DC62757E02E00D6D8AE /* OnlineGameBoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlineGameBoardViewController.swift; sourceTree = "<group>"; };
+		3B436DC82757E03B00D6D8AE /* OnlineGameBoardViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OnlineGameBoardViewController.storyboard; sourceTree = "<group>"; };
+		3B436DCA2757ED8600D6D8AE /* OnlineGameBoardDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlineGameBoardDataService.swift; sourceTree = "<group>"; };
+		3B436DCC2757EDC400D6D8AE /* OnlineGameBoardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlineGameBoardViewModel.swift; sourceTree = "<group>"; };
+		3B5F0E7627559C6B008DAFAC /* OnlinePlayersListNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlinePlayersListNavigationController.swift; sourceTree = "<group>"; };
+		3B72019A274807B1009903A5 /* tic-tac-toe-ios-multiplayer-game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "tic-tac-toe-ios-multiplayer-game.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B72019D274807B1009903A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3B72019F274807B1009903A5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		3B7201A7274807B1009903A5 /* tic_tac_toe_ios_multiplayer_game.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = tic_tac_toe_ios_multiplayer_game.xcdatamodel; sourceTree = "<group>"; };
+		3B7201A9274807B3009903A5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3B7201AC274807B3009903A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3B7201AE274807B3009903A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B7201B3274807B4009903A5 /* tic-tac-toe-ios-multiplayer-gameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "tic-tac-toe-ios-multiplayer-gameTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B7201B7274807B4009903A5 /* tic_tac_toe_ios_multiplayer_gameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tic_tac_toe_ios_multiplayer_gameTests.swift; sourceTree = "<group>"; };
+		3B7201BD274807B4009903A5 /* tic-tac-toe-ios-multiplayer-gameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "tic-tac-toe-ios-multiplayer-gameUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B7201C1274807B4009903A5 /* tic_tac_toe_ios_multiplayer_gameUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tic_tac_toe_ios_multiplayer_gameUITests.swift; sourceTree = "<group>"; };
+		3B7201C3274807B4009903A5 /* tic_tac_toe_ios_multiplayer_gameUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tic_tac_toe_ios_multiplayer_gameUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3B7201DE27480EE6009903A5 /* ToesRainUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToesRainUIView.swift; sourceTree = "<group>"; };
+		3B7201E127481301009903A5 /* SplashScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenViewController.swift; sourceTree = "<group>"; };
+		3B7201E32748130D009903A5 /* SplashScreenViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SplashScreenViewController.storyboard; sourceTree = "<group>"; };
+		3B7201E527481A87009903A5 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		3B7201E8274856F5009903A5 /* GameModeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModeViewController.swift; sourceTree = "<group>"; };
+		3B7201EA27485703009903A5 /* GameModeNavigationController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GameModeNavigationController.storyboard; sourceTree = "<group>"; };
+		3B7201EC274864E9009903A5 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		3BAB58B82748F8E300508CBF /* GameModeNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModeNavigationController.swift; sourceTree = "<group>"; };
+		3BAB58C02749036D00508CBF /* SplashScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenViewModel.swift; sourceTree = "<group>"; };
+		3BAB58C22749038C00508CBF /* SplashScreenDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenDataService.swift; sourceTree = "<group>"; };
+		3BAB58C9274921F100508CBF /* GameDifficultyLevelsViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GameDifficultyLevelsViewController.storyboard; sourceTree = "<group>"; };
+		3BAB58CB2749315B00508CBF /* GameDifficultyLevelsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameDifficultyLevelsViewController.swift; sourceTree = "<group>"; };
+		3BAB58CD2749432600508CBF /* ImgViewsCustomisations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImgViewsCustomisations.swift; sourceTree = "<group>"; };
+		3BAB58CF27496B9B00508CBF /* GameBoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameBoardViewController.swift; sourceTree = "<group>"; };
+		3BAB58D127496BA900508CBF /* GameBoardViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GameBoardViewController.storyboard; sourceTree = "<group>"; };
+		3BBC2872274981F400179C8E /* GameModeDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModeDataService.swift; sourceTree = "<group>"; };
+		3BBC28742749833D00179C8E /* UICollectionViewCell+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionViewCell+Extension.swift"; sourceTree = "<group>"; };
+		3BBC28762749835C00179C8E /* UICollectionView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extension.swift"; sourceTree = "<group>"; };
+		3BBC28782749861500179C8E /* GameDifficultyLevelsDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameDifficultyLevelsDataService.swift; sourceTree = "<group>"; };
+		3BBC287A274999EB00179C8E /* GameBoardDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameBoardDataService.swift; sourceTree = "<group>"; };
+		3BBC287C27499B4700179C8E /* GameBoardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameBoardViewModel.swift; sourceTree = "<group>"; };
+		3BBC287F2749ACC500179C8E /* ToeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToeCollectionViewCell.swift; sourceTree = "<group>"; };
+		3BBC28802749ACC500179C8E /* ToeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ToeCollectionViewCell.xib; sourceTree = "<group>"; };
+		3BD24061274DC34000B0B661 /* GameBoardBotProfileSetUpDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameBoardBotProfileSetUpDataService.swift; sourceTree = "<group>"; };
+		3BEB8E392753BEB7009A3DFF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		3BEB8E672753C842009A3DFF /* OnlinePlayersListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlinePlayersListViewController.swift; sourceTree = "<group>"; };
+		3BEB8E692753C84C009A3DFF /* OnlinePlayersListViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OnlinePlayersListViewController.storyboard; sourceTree = "<group>"; };
+		3BEB8E6D2753CD0D009A3DFF /* CreateAccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewModel.swift; sourceTree = "<group>"; };
+		3BEB8E6F2753CD34009A3DFF /* CreateAccountDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountDataService.swift; sourceTree = "<group>"; };
+		3BEB8E712753D307009A3DFF /* LogInViewDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewDataService.swift; sourceTree = "<group>"; };
+		3BEB8E732753FBE3009A3DFF /* Validator+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Validator+Extensions.swift"; sourceTree = "<group>"; };
+		3BF01C2B2752944200E18835 /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
+		3BF01C2D2752944E00E18835 /* CreateAccountViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CreateAccountViewController.storyboard; sourceTree = "<group>"; };
+		3BF01C2F2752BC3500E18835 /* FloatingLabelInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingLabelInput.swift; sourceTree = "<group>"; };
+		3BFCC78827564F2B00A5CF53 /* UDManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UDManager.swift; sourceTree = "<group>"; };
+		3BFCC78A2756509C00A5CF53 /* PlayerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerModel.swift; sourceTree = "<group>"; };
+		3BFCC78C2756AD0800A5CF53 /* OnlinePlayersListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlinePlayersListViewModel.swift; sourceTree = "<group>"; };
+		3BFCC78E2756AD4200A5CF53 /* OnlinePlayersListDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlinePlayersListDataService.swift; sourceTree = "<group>"; };
+		3BFCC7902756B50C00A5CF53 /* UITableView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
+		3BFCC7922756B51F00A5CF53 /* UITableViewCell+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Extension.swift"; sourceTree = "<group>"; };
+		3BFCC7992756C84800A5CF53 /* OnlineStatusCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlineStatusCell.swift; sourceTree = "<group>"; };
+		3BFCC79A2756C84800A5CF53 /* OnlineStatusCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnlineStatusCell.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3B720197274807B1009903A5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BEB8E5B2753C1B4009A3DFF /* FirebaseMessaging in Frameworks */,
+				3BEB8E552753C1B4009A3DFF /* FirebaseInAppMessaging-Beta in Frameworks */,
+				3BEB8E632753C1B4009A3DFF /* FirebaseStorageCombine-Community in Frameworks */,
+				3BEB8E3F2753C1B4009A3DFF /* FirebaseAnalyticsSwift-Beta in Frameworks */,
+				3BEB8E572753C1B4009A3DFF /* FirebaseInAppMessagingSwift-Beta in Frameworks */,
+				3BEB8E652753C1B4009A3DFF /* FirebaseStorageSwift-Beta in Frameworks */,
+				3BEB8E412753C1B4009A3DFF /* FirebaseAppCheck in Frameworks */,
+				3BEB8E3D2753C1B4009A3DFF /* FirebaseAnalytics in Frameworks */,
+				3BEB8E4F2753C1B4009A3DFF /* FirebaseFirestore in Frameworks */,
+				3BEB8E472753C1B4009A3DFF /* FirebaseCrashlytics in Frameworks */,
+				3BEB8E512753C1B4009A3DFF /* FirebaseFirestoreCombine-Community in Frameworks */,
+				3BEB8E612753C1B4009A3DFF /* FirebaseStorage in Frameworks */,
+				3BEB8E5F2753C1B4009A3DFF /* FirebaseRemoteConfig in Frameworks */,
+				3BEB8E5D2753C1B4009A3DFF /* FirebasePerformance in Frameworks */,
+				3BEB8E432753C1B4009A3DFF /* FirebaseAuth in Frameworks */,
+				3BEB8E592753C1B4009A3DFF /* FirebaseInstallations in Frameworks */,
+				3BEB8E4D2753C1B4009A3DFF /* FirebaseDynamicLinks in Frameworks */,
+				3BEB8E492753C1B4009A3DFF /* FirebaseDatabase in Frameworks */,
+				3BEB8E532753C1B4009A3DFF /* FirebaseFirestoreSwift-Beta in Frameworks */,
+				3BEB8E4B2753C1B4009A3DFF /* FirebaseDatabaseSwift-Beta in Frameworks */,
+				3BEB8E452753C1B4009A3DFF /* FirebaseAuthCombine-Community in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B7201B0274807B4009903A5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B7201BA274807B4009903A5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3B198CB127523754006B61C8 /* Dialog Alerts */ = {
+			isa = PBXGroup;
+			children = (
+				3B198CB2275237AF006B61C8 /* DialogAlertsForActions.swift */,
+			);
+			path = "Dialog Alerts";
+			sourceTree = "<group>";
+		};
+		3B198CB427525CC9006B61C8 /* Online Welcome Scene */ = {
+			isa = PBXGroup;
+			children = (
+				3BF01C2627528DA200E18835 /* Log in Scene */,
+				3BF01C2527528B6700E18835 /* Create Account Scene */,
+				3B198CB627525CFC006B61C8 /* View */,
+				3B198CB527525CDF006B61C8 /* ViewModel */,
+			);
+			path = "Online Welcome Scene";
+			sourceTree = "<group>";
+		};
+		3B198CB527525CDF006B61C8 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		3B198CB627525CFC006B61C8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3B198CB727525D36006B61C8 /* OnlineWelcomeViewController.swift */,
+				3B198CB927525D47006B61C8 /* OnlineWelcomeViewController.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3B436DC32757DF9800D6D8AE /* Online Multyplayer Game Board */ = {
+			isa = PBXGroup;
+			children = (
+				3B436DC52757DFE500D6D8AE /* View */,
+				3B436DC42757DFDC00D6D8AE /* ViewModel */,
+			);
+			path = "Online Multyplayer Game Board";
+			sourceTree = "<group>";
+		};
+		3B436DC42757DFDC00D6D8AE /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				3B436DCA2757ED8600D6D8AE /* OnlineGameBoardDataService.swift */,
+				3B436DCC2757EDC400D6D8AE /* OnlineGameBoardViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		3B436DC52757DFE500D6D8AE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3B436DC62757E02E00D6D8AE /* OnlineGameBoardViewController.swift */,
+				3B436DC82757E03B00D6D8AE /* OnlineGameBoardViewController.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3B720191274807B1009903A5 = {
+			isa = PBXGroup;
+			children = (
+				3B72019C274807B1009903A5 /* tic-tac-toe-ios-multiplayer-game */,
+				3B7201B6274807B4009903A5 /* tic-tac-toe-ios-multiplayer-gameTests */,
+				3B7201C0274807B4009903A5 /* tic-tac-toe-ios-multiplayer-gameUITests */,
+				3B72019B274807B1009903A5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3B72019B274807B1009903A5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3B72019A274807B1009903A5 /* tic-tac-toe-ios-multiplayer-game.app */,
+				3B7201B3274807B4009903A5 /* tic-tac-toe-ios-multiplayer-gameTests.xctest */,
+				3B7201BD274807B4009903A5 /* tic-tac-toe-ios-multiplayer-gameUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3B72019C274807B1009903A5 /* tic-tac-toe-ios-multiplayer-game */ = {
+			isa = PBXGroup;
+			children = (
+				3B7201D4274809A4009903A5 /* App */,
+				3B7201D327480995009903A5 /* Infrastructure */,
+				3B7201D227480971009903A5 /* Presentation */,
+				3B7201D127480964009903A5 /* Resources */,
+				3B7201D027480959009903A5 /* Supporting Files */,
+			);
+			path = "tic-tac-toe-ios-multiplayer-game";
+			sourceTree = "<group>";
+		};
+		3B7201B6274807B4009903A5 /* tic-tac-toe-ios-multiplayer-gameTests */ = {
+			isa = PBXGroup;
+			children = (
+				3B7201B7274807B4009903A5 /* tic_tac_toe_ios_multiplayer_gameTests.swift */,
+			);
+			path = "tic-tac-toe-ios-multiplayer-gameTests";
+			sourceTree = "<group>";
+		};
+		3B7201C0274807B4009903A5 /* tic-tac-toe-ios-multiplayer-gameUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3B7201C1274807B4009903A5 /* tic_tac_toe_ios_multiplayer_gameUITests.swift */,
+				3B7201C3274807B4009903A5 /* tic_tac_toe_ios_multiplayer_gameUITestsLaunchTests.swift */,
+			);
+			path = "tic-tac-toe-ios-multiplayer-gameUITests";
+			sourceTree = "<group>";
+		};
+		3B7201D027480959009903A5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3B7201AB274807B3009903A5 /* LaunchScreen.storyboard */,
+				3BEB8E392753BEB7009A3DFF /* GoogleService-Info.plist */,
+				3B7201AE274807B3009903A5 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3B7201D127480964009903A5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3B7201A9274807B3009903A5 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		3B7201D227480971009903A5 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				3B7201DA27480A1A009903A5 /* Scenes */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		3B7201D327480995009903A5 /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				3B7201D927480A09009903A5 /* Custom UI Components */,
+				3B7201D8274809FD009903A5 /* Contants */,
+				3B7201D7274809F3009903A5 /* Domain */,
+				3B7201D6274809E8009903A5 /* Managers */,
+				3B7201D5274809DE009903A5 /* Extensions */,
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		3B7201D4274809A4009903A5 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				3B72019D274807B1009903A5 /* AppDelegate.swift */,
+				3B72019F274807B1009903A5 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		3B7201D5274809DE009903A5 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3B7201E527481A87009903A5 /* UIView+Extensions.swift */,
+				3BBC28742749833D00179C8E /* UICollectionViewCell+Extension.swift */,
+				3BBC28762749835C00179C8E /* UICollectionView+Extension.swift */,
+				3BEB8E732753FBE3009A3DFF /* Validator+Extensions.swift */,
+				3BFCC7902756B50C00A5CF53 /* UITableView+Extension.swift */,
+				3BFCC7922756B51F00A5CF53 /* UITableViewCell+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		3B7201D6274809E8009903A5 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				3B198CB127523754006B61C8 /* Dialog Alerts */,
+				3B7201DC27480AD7009903A5 /* Local Database */,
+				3BFCC78827564F2B00A5CF53 /* UDManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		3B7201D7274809F3009903A5 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				3B7201DB27480A85009903A5 /* Models */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		3B7201D8274809FD009903A5 /* Contants */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Contants;
+			sourceTree = "<group>";
+		};
+		3B7201D927480A09009903A5 /* Custom UI Components */ = {
+			isa = PBXGroup;
+			children = (
+				3B7201DE27480EE6009903A5 /* ToesRainUIView.swift */,
+				3B7201EC274864E9009903A5 /* GradientView.swift */,
+				3BAB58CD2749432600508CBF /* ImgViewsCustomisations.swift */,
+				3BF01C2F2752BC3500E18835 /* FloatingLabelInput.swift */,
+			);
+			path = "Custom UI Components";
+			sourceTree = "<group>";
+		};
+		3B7201DA27480A1A009903A5 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				3B436DC32757DF9800D6D8AE /* Online Multyplayer Game Board */,
+				3BEB8E662753C80A009A3DFF /* Online Players List Scene */,
+				3B198CB427525CC9006B61C8 /* Online Welcome Scene */,
+				3BAB58B72748F7AB00508CBF /* Game Board */,
+				3BAB58C42749211700508CBF /* Game Difficulty Levels */,
+				3B7201E7274856C7009903A5 /* Game Modes */,
+				3B7201E0274812D2009903A5 /* Splash Screen */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		3B7201DB27480A85009903A5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3BFCC78A2756509C00A5CF53 /* PlayerModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3B7201DC27480AD7009903A5 /* Local Database */ = {
+			isa = PBXGroup;
+			children = (
+				3B7201A6274807B1009903A5 /* tic_tac_toe_ios_multiplayer_game.xcdatamodeld */,
+			);
+			path = "Local Database";
+			sourceTree = "<group>";
+		};
+		3B7201E0274812D2009903A5 /* Splash Screen */ = {
+			isa = PBXGroup;
+			children = (
+				3BAB58BA2748FE2600508CBF /* View */,
+				3BAB58BB2748FE3200508CBF /* ViewModel */,
+			);
+			path = "Splash Screen";
+			sourceTree = "<group>";
+		};
+		3B7201E7274856C7009903A5 /* Game Modes */ = {
+			isa = PBXGroup;
+			children = (
+				3BAB58BD2748FE5F00508CBF /* View */,
+				3BAB58BC2748FE5500508CBF /* ViewModel */,
+			);
+			path = "Game Modes";
+			sourceTree = "<group>";
+		};
+		3BAB58B72748F7AB00508CBF /* Game Board */ = {
+			isa = PBXGroup;
+			children = (
+				3BAB58BF2748FE8A00508CBF /* View */,
+				3BAB58BE2748FE8200508CBF /* ViewModel */,
+			);
+			path = "Game Board";
+			sourceTree = "<group>";
+		};
+		3BAB58BA2748FE2600508CBF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3B7201E127481301009903A5 /* SplashScreenViewController.swift */,
+				3B7201E32748130D009903A5 /* SplashScreenViewController.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3BAB58BB2748FE3200508CBF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				3BAB58C22749038C00508CBF /* SplashScreenDataService.swift */,
+				3BAB58C02749036D00508CBF /* SplashScreenViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		3BAB58BC2748FE5500508CBF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				3BBC2872274981F400179C8E /* GameModeDataService.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		3BAB58BD2748FE5F00508CBF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3B7201E8274856F5009903A5 /* GameModeViewController.swift */,
+				3B7201EA27485703009903A5 /* GameModeNavigationController.storyboard */,
+				3BAB58B82748F8E300508CBF /* GameModeNavigationController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3BAB58BE2748FE8200508CBF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				3BD24061274DC34000B0B661 /* GameBoardBotProfileSetUpDataService.swift */,
+				3BBC287A274999EB00179C8E /* GameBoardDataService.swift */,
+				3BBC287C27499B4700179C8E /* GameBoardViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		3BAB58BF2748FE8A00508CBF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3BBC287E2749AC8400179C8E /* Toe Cell */,
+				3BAB58CF27496B9B00508CBF /* GameBoardViewController.swift */,
+				3BAB58D127496BA900508CBF /* GameBoardViewController.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3BAB58C42749211700508CBF /* Game Difficulty Levels */ = {
+			isa = PBXGroup;
+			children = (
+				3BAB58C62749215A00508CBF /* View */,
+				3BAB58C52749215200508CBF /* ViewModel */,
+			);
+			path = "Game Difficulty Levels";
+			sourceTree = "<group>";
+		};
+		3BAB58C52749215200508CBF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				3BBC28782749861500179C8E /* GameDifficultyLevelsDataService.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		3BAB58C62749215A00508CBF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3BAB58CB2749315B00508CBF /* GameDifficultyLevelsViewController.swift */,
+				3BAB58C9274921F100508CBF /* GameDifficultyLevelsViewController.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3BBC287E2749AC8400179C8E /* Toe Cell */ = {
+			isa = PBXGroup;
+			children = (
+				3BBC287F2749ACC500179C8E /* ToeCollectionViewCell.swift */,
+				3BBC28802749ACC500179C8E /* ToeCollectionViewCell.xib */,
+			);
+			path = "Toe Cell";
+			sourceTree = "<group>";
+		};
+		3BEB8E662753C80A009A3DFF /* Online Players List Scene */ = {
+			isa = PBXGroup;
+			children = (
+				3BEB8E6C2753C85E009A3DFF /* View */,
+				3BEB8E6B2753C857009A3DFF /* ViewModel */,
+			);
+			path = "Online Players List Scene";
+			sourceTree = "<group>";
+		};
+		3BEB8E6B2753C857009A3DFF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				3BFCC78E2756AD4200A5CF53 /* OnlinePlayersListDataService.swift */,
+				3BFCC78C2756AD0800A5CF53 /* OnlinePlayersListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		3BEB8E6C2753C85E009A3DFF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3BFCC7942756B5F000A5CF53 /* Online Status Cell */,
+				3BEB8E692753C84C009A3DFF /* OnlinePlayersListViewController.storyboard */,
+				3B5F0E7627559C6B008DAFAC /* OnlinePlayersListNavigationController.swift */,
+				3BEB8E672753C842009A3DFF /* OnlinePlayersListViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3BF01C2527528B6700E18835 /* Create Account Scene */ = {
+			isa = PBXGroup;
+			children = (
+				3BF01C2A27528E1100E18835 /* View */,
+				3BF01C2727528DFA00E18835 /* ViewModel */,
+			);
+			path = "Create Account Scene";
+			sourceTree = "<group>";
+		};
+		3BF01C2627528DA200E18835 /* Log in Scene */ = {
+			isa = PBXGroup;
+			children = (
+				3BF01C2927528E0700E18835 /* View */,
+				3BF01C2827528E0000E18835 /* ViewModel */,
+			);
+			path = "Log in Scene";
+			sourceTree = "<group>";
+		};
+		3BF01C2727528DFA00E18835 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				3BEB8E6F2753CD34009A3DFF /* CreateAccountDataService.swift */,
+				3BEB8E6D2753CD0D009A3DFF /* CreateAccountViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		3BF01C2827528E0000E18835 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				3BEB8E712753D307009A3DFF /* LogInViewDataService.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		3BF01C2927528E0700E18835 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3B0056A72752F2B400D88381 /* LogInViewController.swift */,
+				3B0056A92752F2BF00D88381 /* LogInViewController.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3BF01C2A27528E1100E18835 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3BF01C2B2752944200E18835 /* CreateAccountViewController.swift */,
+				3BF01C2D2752944E00E18835 /* CreateAccountViewController.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3BFCC7942756B5F000A5CF53 /* Online Status Cell */ = {
+			isa = PBXGroup;
+			children = (
+				3BFCC7992756C84800A5CF53 /* OnlineStatusCell.swift */,
+				3BFCC79A2756C84800A5CF53 /* OnlineStatusCell.xib */,
+			);
+			path = "Online Status Cell";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3B720199274807B1009903A5 /* tic-tac-toe-ios-multiplayer-game */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B7201C7274807B4009903A5 /* Build configuration list for PBXNativeTarget "tic-tac-toe-ios-multiplayer-game" */;
+			buildPhases = (
+				3B720196274807B1009903A5 /* Sources */,
+				3B720197274807B1009903A5 /* Frameworks */,
+				3B720198274807B1009903A5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "tic-tac-toe-ios-multiplayer-game";
+			packageProductDependencies = (
+				3BEB8E3C2753C1B4009A3DFF /* FirebaseAnalytics */,
+				3BEB8E3E2753C1B4009A3DFF /* FirebaseAnalyticsSwift-Beta */,
+				3BEB8E402753C1B4009A3DFF /* FirebaseAppCheck */,
+				3BEB8E422753C1B4009A3DFF /* FirebaseAuth */,
+				3BEB8E442753C1B4009A3DFF /* FirebaseAuthCombine-Community */,
+				3BEB8E462753C1B4009A3DFF /* FirebaseCrashlytics */,
+				3BEB8E482753C1B4009A3DFF /* FirebaseDatabase */,
+				3BEB8E4A2753C1B4009A3DFF /* FirebaseDatabaseSwift-Beta */,
+				3BEB8E4C2753C1B4009A3DFF /* FirebaseDynamicLinks */,
+				3BEB8E4E2753C1B4009A3DFF /* FirebaseFirestore */,
+				3BEB8E502753C1B4009A3DFF /* FirebaseFirestoreCombine-Community */,
+				3BEB8E522753C1B4009A3DFF /* FirebaseFirestoreSwift-Beta */,
+				3BEB8E542753C1B4009A3DFF /* FirebaseInAppMessaging-Beta */,
+				3BEB8E562753C1B4009A3DFF /* FirebaseInAppMessagingSwift-Beta */,
+				3BEB8E582753C1B4009A3DFF /* FirebaseInstallations */,
+				3BEB8E5A2753C1B4009A3DFF /* FirebaseMessaging */,
+				3BEB8E5C2753C1B4009A3DFF /* FirebasePerformance */,
+				3BEB8E5E2753C1B4009A3DFF /* FirebaseRemoteConfig */,
+				3BEB8E602753C1B4009A3DFF /* FirebaseStorage */,
+				3BEB8E622753C1B4009A3DFF /* FirebaseStorageCombine-Community */,
+				3BEB8E642753C1B4009A3DFF /* FirebaseStorageSwift-Beta */,
+			);
+			productName = "tic-tac-toe-ios-multiplayer-game";
+			productReference = 3B72019A274807B1009903A5 /* tic-tac-toe-ios-multiplayer-game.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3B7201B2274807B4009903A5 /* tic-tac-toe-ios-multiplayer-gameTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B7201CA274807B4009903A5 /* Build configuration list for PBXNativeTarget "tic-tac-toe-ios-multiplayer-gameTests" */;
+			buildPhases = (
+				3B7201AF274807B4009903A5 /* Sources */,
+				3B7201B0274807B4009903A5 /* Frameworks */,
+				3B7201B1274807B4009903A5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3B7201B5274807B4009903A5 /* PBXTargetDependency */,
+			);
+			name = "tic-tac-toe-ios-multiplayer-gameTests";
+			productName = "tic-tac-toe-ios-multiplayer-gameTests";
+			productReference = 3B7201B3274807B4009903A5 /* tic-tac-toe-ios-multiplayer-gameTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3B7201BC274807B4009903A5 /* tic-tac-toe-ios-multiplayer-gameUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B7201CD274807B4009903A5 /* Build configuration list for PBXNativeTarget "tic-tac-toe-ios-multiplayer-gameUITests" */;
+			buildPhases = (
+				3B7201B9274807B4009903A5 /* Sources */,
+				3B7201BA274807B4009903A5 /* Frameworks */,
+				3B7201BB274807B4009903A5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3B7201BF274807B4009903A5 /* PBXTargetDependency */,
+			);
+			name = "tic-tac-toe-ios-multiplayer-gameUITests";
+			productName = "tic-tac-toe-ios-multiplayer-gameUITests";
+			productReference = 3B7201BD274807B4009903A5 /* tic-tac-toe-ios-multiplayer-gameUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3B720192274807B1009903A5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					3B720199274807B1009903A5 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					3B7201B2274807B4009903A5 = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = 3B720199274807B1009903A5;
+					};
+					3B7201BC274807B4009903A5 = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = 3B720199274807B1009903A5;
+					};
+				};
+			};
+			buildConfigurationList = 3B720195274807B1009903A5 /* Build configuration list for PBXProject "tic-tac-toe-ios-multiplayer-game" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3B720191274807B1009903A5;
+			packageReferences = (
+				3BEB8E3B2753C1B4009A3DFF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = 3B72019B274807B1009903A5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3B720199274807B1009903A5 /* tic-tac-toe-ios-multiplayer-game */,
+				3B7201B2274807B4009903A5 /* tic-tac-toe-ios-multiplayer-gameTests */,
+				3B7201BC274807B4009903A5 /* tic-tac-toe-ios-multiplayer-gameUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3B720198274807B1009903A5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BFCC79C2756C84800A5CF53 /* OnlineStatusCell.xib in Resources */,
+				3BF01C2E2752944E00E18835 /* CreateAccountViewController.storyboard in Resources */,
+				3BAB58D227496BA900508CBF /* GameBoardViewController.storyboard in Resources */,
+				3B7201AD274807B3009903A5 /* LaunchScreen.storyboard in Resources */,
+				3B0056AA2752F2BF00D88381 /* LogInViewController.storyboard in Resources */,
+				3B7201AA274807B3009903A5 /* Assets.xcassets in Resources */,
+				3B7201EB27485703009903A5 /* GameModeNavigationController.storyboard in Resources */,
+				3BBC28822749ACC500179C8E /* ToeCollectionViewCell.xib in Resources */,
+				3B198CBA27525D48006B61C8 /* OnlineWelcomeViewController.storyboard in Resources */,
+				3B436DC92757E03B00D6D8AE /* OnlineGameBoardViewController.storyboard in Resources */,
+				3BEB8E3A2753BEB7009A3DFF /* GoogleService-Info.plist in Resources */,
+				3BEB8E6A2753C84C009A3DFF /* OnlinePlayersListViewController.storyboard in Resources */,
+				3B7201E42748130D009903A5 /* SplashScreenViewController.storyboard in Resources */,
+				3BAB58CA274921F100508CBF /* GameDifficultyLevelsViewController.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B7201B1274807B4009903A5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B7201BB274807B4009903A5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3B720196274807B1009903A5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B436DCD2757EDC400D6D8AE /* OnlineGameBoardViewModel.swift in Sources */,
+				3B7201E627481A87009903A5 /* UIView+Extensions.swift in Sources */,
+				3BAB58C32749038C00508CBF /* SplashScreenDataService.swift in Sources */,
+				3BBC287B274999EB00179C8E /* GameBoardDataService.swift in Sources */,
+				3BEB8E722753D307009A3DFF /* LogInViewDataService.swift in Sources */,
+				3B198CB3275237AF006B61C8 /* DialogAlertsForActions.swift in Sources */,
+				3B7201A8274807B1009903A5 /* tic_tac_toe_ios_multiplayer_game.xcdatamodeld in Sources */,
+				3B7201E227481301009903A5 /* SplashScreenViewController.swift in Sources */,
+				3BAB58CC2749315B00508CBF /* GameDifficultyLevelsViewController.swift in Sources */,
+				3BBC2873274981F400179C8E /* GameModeDataService.swift in Sources */,
+				3B7201DF27480EE6009903A5 /* ToesRainUIView.swift in Sources */,
+				3BD24062274DC34000B0B661 /* GameBoardBotProfileSetUpDataService.swift in Sources */,
+				3BAB58CE2749432600508CBF /* ImgViewsCustomisations.swift in Sources */,
+				3BFCC78D2756AD0800A5CF53 /* OnlinePlayersListViewModel.swift in Sources */,
+				3BFCC78927564F2B00A5CF53 /* UDManager.swift in Sources */,
+				3B72019E274807B1009903A5 /* AppDelegate.swift in Sources */,
+				3BBC28792749861500179C8E /* GameDifficultyLevelsDataService.swift in Sources */,
+				3BFCC7932756B51F00A5CF53 /* UITableViewCell+Extension.swift in Sources */,
+				3B7201A0274807B1009903A5 /* SceneDelegate.swift in Sources */,
+				3BAB58B92748F8E300508CBF /* GameModeNavigationController.swift in Sources */,
+				3BBC287D27499B4700179C8E /* GameBoardViewModel.swift in Sources */,
+				3B7201ED274864E9009903A5 /* GradientView.swift in Sources */,
+				3BBC28752749833D00179C8E /* UICollectionViewCell+Extension.swift in Sources */,
+				3BFCC7912756B50C00A5CF53 /* UITableView+Extension.swift in Sources */,
+				3BFCC78B2756509C00A5CF53 /* PlayerModel.swift in Sources */,
+				3BBC28812749ACC500179C8E /* ToeCollectionViewCell.swift in Sources */,
+				3BEB8E702753CD34009A3DFF /* CreateAccountDataService.swift in Sources */,
+				3BAB58D027496B9B00508CBF /* GameBoardViewController.swift in Sources */,
+				3BEB8E742753FBE3009A3DFF /* Validator+Extensions.swift in Sources */,
+				3B0056A82752F2B400D88381 /* LogInViewController.swift in Sources */,
+				3BF01C2C2752944200E18835 /* CreateAccountViewController.swift in Sources */,
+				3BFCC78F2756AD4200A5CF53 /* OnlinePlayersListDataService.swift in Sources */,
+				3BEB8E6E2753CD0D009A3DFF /* CreateAccountViewModel.swift in Sources */,
+				3B436DCB2757ED8600D6D8AE /* OnlineGameBoardDataService.swift in Sources */,
+				3BF01C302752BC3500E18835 /* FloatingLabelInput.swift in Sources */,
+				3B198CB827525D36006B61C8 /* OnlineWelcomeViewController.swift in Sources */,
+				3BFCC79B2756C84800A5CF53 /* OnlineStatusCell.swift in Sources */,
+				3B5F0E7727559C6B008DAFAC /* OnlinePlayersListNavigationController.swift in Sources */,
+				3BEB8E682753C842009A3DFF /* OnlinePlayersListViewController.swift in Sources */,
+				3B7201E9274856F5009903A5 /* GameModeViewController.swift in Sources */,
+				3BAB58C12749036D00508CBF /* SplashScreenViewModel.swift in Sources */,
+				3BBC28772749835C00179C8E /* UICollectionView+Extension.swift in Sources */,
+				3B436DC72757E02E00D6D8AE /* OnlineGameBoardViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B7201AF274807B4009903A5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B7201B8274807B4009903A5 /* tic_tac_toe_ios_multiplayer_gameTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B7201B9274807B4009903A5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B7201C4274807B4009903A5 /* tic_tac_toe_ios_multiplayer_gameUITestsLaunchTests.swift in Sources */,
+				3B7201C2274807B4009903A5 /* tic_tac_toe_ios_multiplayer_gameUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3B7201B5274807B4009903A5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3B720199274807B1009903A5 /* tic-tac-toe-ios-multiplayer-game */;
+			targetProxy = 3B7201B4274807B4009903A5 /* PBXContainerItemProxy */;
+		};
+		3B7201BF274807B4009903A5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3B720199274807B1009903A5 /* tic-tac-toe-ios-multiplayer-game */;
+			targetProxy = 3B7201BE274807B4009903A5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3B7201AB274807B3009903A5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3B7201AC274807B3009903A5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3B7201C5274807B4009903A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3B7201C6274807B4009903A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3B7201C8274807B4009903A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "tic-tac-toe-ios-multiplayer-game/Supporting Files/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Tic Tac Toe";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = SplashScreenViewController;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ika.ikakooo.pro.tic-tac-toe-ios-multiplayer-game";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3B7201C9274807B4009903A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "tic-tac-toe-ios-multiplayer-game/Supporting Files/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Tic Tac Toe";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = SplashScreenViewController;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ika.ikakooo.pro.tic-tac-toe-ios-multiplayer-game";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3B7201CB274807B4009903A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ika.ikakooo.pro.tic-tac-toe-ios-multiplayer-gameTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/tic-tac-toe-ios-multiplayer-game.app/tic-tac-toe-ios-multiplayer-game";
+			};
+			name = Debug;
+		};
+		3B7201CC274807B4009903A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ika.ikakooo.pro.tic-tac-toe-ios-multiplayer-gameTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/tic-tac-toe-ios-multiplayer-game.app/tic-tac-toe-ios-multiplayer-game";
+			};
+			name = Release;
+		};
+		3B7201CE274807B4009903A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ika.ikakooo.pro.tic-tac-toe-ios-multiplayer-gameUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "tic-tac-toe-ios-multiplayer-game";
+			};
+			name = Debug;
+		};
+		3B7201CF274807B4009903A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ika.ikakooo.pro.tic-tac-toe-ios-multiplayer-gameUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "tic-tac-toe-ios-multiplayer-game";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3B720195274807B1009903A5 /* Build configuration list for PBXProject "tic-tac-toe-ios-multiplayer-game" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B7201C5274807B4009903A5 /* Debug */,
+				3B7201C6274807B4009903A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3B7201C7274807B4009903A5 /* Build configuration list for PBXNativeTarget "tic-tac-toe-ios-multiplayer-game" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B7201C8274807B4009903A5 /* Debug */,
+				3B7201C9274807B4009903A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3B7201CA274807B4009903A5 /* Build configuration list for PBXNativeTarget "tic-tac-toe-ios-multiplayer-gameTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B7201CB274807B4009903A5 /* Debug */,
+				3B7201CC274807B4009903A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3B7201CD274807B4009903A5 /* Build configuration list for PBXNativeTarget "tic-tac-toe-ios-multiplayer-gameUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B7201CE274807B4009903A5 /* Debug */,
+				3B7201CF274807B4009903A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3BEB8E3B2753C1B4009A3DFF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3BEB8E3C2753C1B4009A3DFF /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3BEB8E3B2753C1B4009A3DFF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		3BEB8E3E2753C1B4009A3DFF /* FirebaseAnalyticsSwift-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3BEB8E3B2753C1B4009A3DFF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseAnalyticsSwift-Beta";
+		};
+		3BEB8E402753C1B4009A3DFF /* FirebaseAppCheck */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3BEB8E3B2753C1B4009A3DFF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAppCheck;
+		};
+		3BEB8E422753C1B4009A3DFF /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3BEB8E3B2753C1B4009A3DFF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		3BEB8E442753C1B4009A3DFF /* FirebaseAuthCombine-Community */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3BEB8E3B2753C1B4009A3DFF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseAuthCombine-Community";
+		};
+		3BEB8E462753C1B4009A3DFF /* FirebaseCrashlytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3BEB8E3B2753C1B4009A3DFF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCrashlytics;
+		};
+		3BEB8E482753C1B4009A3DFF /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3BEB8E3B2753C1B4009A3DFF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		3BEB8E4A2753C1B4009A3DFF /* FirebaseDatabaseSwift-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3BEB8E3B2753C1B4009A3DFF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseDatabaseSwift-Beta";
+		};
+		3BEB8E4C2753C1B4009A3DFF /* FirebaseDynamicLinks */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3BEB8E3B2753C1B4009A3DFF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDynamicLinks;
+		};
+		3BEB8E4E2753C1B4009A3DFF /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3BEB8E3B2753C1B4009A3DFF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		3BEB8E502753C1B4009A3DFF /* FirebaseFirestoreCombine-Community */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3BEB8E3B2753C1B4009A3DFF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseFirestoreCombine-Community";
+		};
+		3BEB8E522753C1B4009A3DFF /* FirebaseFirestoreSwift-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3BEB8E3B2753C1B4009A3DFF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseFirestoreSwift-Beta";
+		};
+		3BEB8E542753C1B4009A3DFF /* FirebaseInAppMessaging-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3BEB8E3B2753C1B4009A3DFF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseInAppMessaging-Beta";
+		};
+		3BEB8E562753C1B4009A3DFF /* FirebaseInAppMessagingSwift-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3BEB8E3B2753C1B4009A3DFF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseInAppMessagingSwift-Beta";
+		};
+		3BEB8E582753C1B4009A3DFF /* FirebaseInstallations */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3BEB8E3B2753C1B4009A3DFF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseInstallations;
+		};
+		3BEB8E5A2753C1B4009A3DFF /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3BEB8E3B2753C1B4009A3DFF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
+		};
+		3BEB8E5C2753C1B4009A3DFF /* FirebasePerformance */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3BEB8E3B2753C1B4009A3DFF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebasePerformance;
+		};
+		3BEB8E5E2753C1B4009A3DFF /* FirebaseRemoteConfig */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3BEB8E3B2753C1B4009A3DFF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseRemoteConfig;
+		};
+		3BEB8E602753C1B4009A3DFF /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3BEB8E3B2753C1B4009A3DFF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+		3BEB8E622753C1B4009A3DFF /* FirebaseStorageCombine-Community */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3BEB8E3B2753C1B4009A3DFF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseStorageCombine-Community";
+		};
+		3BEB8E642753C1B4009A3DFF /* FirebaseStorageSwift-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3BEB8E3B2753C1B4009A3DFF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseStorageSwift-Beta";
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		3B7201A6274807B1009903A5 /* tic_tac_toe_ios_multiplayer_game.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				3B7201A7274807B1009903A5 /* tic_tac_toe_ios_multiplayer_game.xcdatamodel */,
+			);
+			currentVersion = 3B7201A7274807B1009903A5 /* tic_tac_toe_ios_multiplayer_game.xcdatamodel */;
+			path = tic_tac_toe_ios_multiplayer_game.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 3B720192274807B1009903A5 /* Project object */;
+}
