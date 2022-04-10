@@ -31,40 +31,29 @@ class ToeCollectionViewCell: UICollectionViewCell {
     
     
     func configure(with toe: String) {
-//        switch toe {
-//        case "X": imgViewToe.image =  UIImage.init(named: "toe_x")
-//        case "O": imgViewToe.image =  UIImage.init(named: "toe_o")
-//        default: imgViewToe.image = nil
-//        }
-        
-
-//        switch toe {
-//        case "X": imgViewToe.image =  UIImage.init(named: "toe_x_with_border")
-//        case "O": imgViewToe.image =  UIImage.init(named: "toe_o_with_border")
-//        default: imgViewToe.image = UIImage.init(named: "empty_toe_space")
-//        }
-        
+        imgViewToe.alpha = 0.1
         switch toe {
         case "X":  self.imgViewToe.transform = CGAffineTransform(scaleX: 0, y: 0)
-            UIView.animate(withDuration: 1.5, delay: 0, usingSpringWithDamping: 0.4, initialSpringVelocity: 0, options: .curveEaseOut, animations: {
+            UIView.animate(withDuration: 0.5, delay: 0.0, options: UIView.AnimationOptions.curveEaseIn, animations: {
                 self.imgViewToe.image = UIImage.init(named: "toe_x")
-                self.imgViewToe.transform = .identity
-            }, completion: nil)
+                self.imgViewToe.alpha = 1.0
+                self.imgViewToe.transform = CGAffineTransform.identity.scaledBy(x: 1.3, y: 1.3)
+             }) { (finished) in
+                 UIView.animate(withDuration: 0.5, animations: {
+                  self.imgViewToe.transform = CGAffineTransform.identity // undo in 1 seconds
+               })
+            }
         case "O":  self.imgViewToe.transform = CGAffineTransform(scaleX: 0, y: 0)
-            UIView.animate(withDuration: 1.5, delay: 0, usingSpringWithDamping: 0.4, initialSpringVelocity: 0, options: .curveEaseOut, animations: {
+            UIView.animate(withDuration: 0.5, delay: 0.0, options: UIView.AnimationOptions.curveEaseIn, animations: {
                 self.imgViewToe.image = UIImage.init(named: "toe_o")
-                self.imgViewToe.transform = .identity
-            }, completion: nil)
+                self.imgViewToe.alpha = 1.0
+                self.imgViewToe.transform = CGAffineTransform.identity.scaledBy(x: 1.3, y: 1.3)
+             }) { (finished) in
+                 UIView.animate(withDuration: 0.5, animations: {
+                  self.imgViewToe.transform = CGAffineTransform.identity // undo in 1 seconds
+               })
+            }
         default: imgViewToe.image = nil //UIImage.init(named: "empty_toe_space")
-            
-//            self.imgViewToe.transform = CGAffineTransform(scaleX: 0, y: 0)
-//            UIView.animate(withDuration: 1.5, delay: 0, usingSpringWithDamping: 0.3, initialSpringVelocity: 0, options: .curveEaseOut, animations: {
-//                self.imgViewToe.image = UIImage.init(named: "empty_toe_space")
-//                self.imgViewToe.transform = .identity
-//            }, completion: nil)
         }
-        
-       
     }
-
 }

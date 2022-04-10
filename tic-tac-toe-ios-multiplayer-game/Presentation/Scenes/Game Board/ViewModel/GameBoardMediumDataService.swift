@@ -1,33 +1,24 @@
 //
-//  GameBoardDataService.swift
+//  GameBoardMediumDataService.swift
 //  tic-tac-toe-ios-multiplayer-game
 //
-//  Created by MacBook Pro on 21.11.21.
+//  Created by Irakli Chkhitunidzde on 10.04.22.
 //
 
 import UIKit
 
-class GameBoardDataService: NSObject, UICollectionViewDataSource {
+class GameBoardMediumDataService: NSObject, UICollectionViewDataSource {
     
     private var controller: UIViewController!
     private var collectionView: UICollectionView!
     private var viewModel: GameBoardViewModelProtocol!
-    var new = [String]()
-    var old = [String]()
-    
     private var toes = [String](){
+        
         willSet {
-             old = toes.isEmpty ? newValue : toes
-             new = newValue
+           
         }
         didSet {
-            for index in new.indices  {
-                if new[index] != old[index]{
-                    let indexPath = IndexPath(item: index, section: 0)
-                    collectionView.reloadItems(at: [indexPath])
-                }
-            }
-            //collectionView.reloadData()
+            collectionView.reloadData()
             viewModel.setToes(newToes: toes)
         }
     }
@@ -61,13 +52,12 @@ class GameBoardDataService: NSObject, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.deque(class: ToeCollectionViewCell.self, for: indexPath)
         cell.configure(with: toes[indexPath.row])
-        //cell.gridAnimationCell(indexPath: indexPath)
         return cell
     }
 }
 
 
-extension GameBoardDataService: UICollectionViewDelegateFlowLayout {
+extension GameBoardMediumDataService: UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView,
                         layout collectionViewLayout: UICollectionViewLayout,
@@ -120,5 +110,6 @@ extension GameBoardDataService: UICollectionViewDelegateFlowLayout {
         }
     }
 }
+
 
 
