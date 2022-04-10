@@ -32,6 +32,8 @@
 		3B7201E9274856F5009903A5 /* GameModeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7201E8274856F5009903A5 /* GameModeViewController.swift */; };
 		3B7201EB27485703009903A5 /* GameModeNavigationController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B7201EA27485703009903A5 /* GameModeNavigationController.storyboard */; };
 		3B7201ED274864E9009903A5 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7201EC274864E9009903A5 /* GradientView.swift */; };
+		3B78034C2802C9F500245DB0 /* GameBoardMediumDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B78034B2802C9F500245DB0 /* GameBoardMediumDataService.swift */; };
+		3B78034E2802D09500245DB0 /* GameBoardHardDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B78034D2802D09500245DB0 /* GameBoardHardDataService.swift */; };
 		3BAB58B92748F8E300508CBF /* GameModeNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BAB58B82748F8E300508CBF /* GameModeNavigationController.swift */; };
 		3BAB58C12749036D00508CBF /* SplashScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BAB58C02749036D00508CBF /* SplashScreenViewModel.swift */; };
 		3BAB58C32749038C00508CBF /* SplashScreenDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BAB58C22749038C00508CBF /* SplashScreenDataService.swift */; };
@@ -137,6 +139,8 @@
 		3B7201E8274856F5009903A5 /* GameModeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModeViewController.swift; sourceTree = "<group>"; };
 		3B7201EA27485703009903A5 /* GameModeNavigationController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GameModeNavigationController.storyboard; sourceTree = "<group>"; };
 		3B7201EC274864E9009903A5 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		3B78034B2802C9F500245DB0 /* GameBoardMediumDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameBoardMediumDataService.swift; sourceTree = "<group>"; };
+		3B78034D2802D09500245DB0 /* GameBoardHardDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameBoardHardDataService.swift; sourceTree = "<group>"; };
 		3BAB58B82748F8E300508CBF /* GameModeNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModeNavigationController.swift; sourceTree = "<group>"; };
 		3BAB58C02749036D00508CBF /* SplashScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenViewModel.swift; sourceTree = "<group>"; };
 		3BAB58C22749038C00508CBF /* SplashScreenDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenDataService.swift; sourceTree = "<group>"; };
@@ -524,6 +528,8 @@
 			isa = PBXGroup;
 			children = (
 				3BD24061274DC34000B0B661 /* GameBoardBotProfileSetUpDataService.swift */,
+				3B78034D2802D09500245DB0 /* GameBoardHardDataService.swift */,
+				3B78034B2802C9F500245DB0 /* GameBoardMediumDataService.swift */,
 				3BBC287A274999EB00179C8E /* GameBoardDataService.swift */,
 				3BBC287C27499B4700179C8E /* GameBoardViewModel.swift */,
 			);
@@ -840,6 +846,7 @@
 				3BBC287B274999EB00179C8E /* GameBoardDataService.swift in Sources */,
 				3BEB8E722753D307009A3DFF /* LogInViewDataService.swift in Sources */,
 				3B198CB3275237AF006B61C8 /* DialogAlertsForActions.swift in Sources */,
+				3B78034C2802C9F500245DB0 /* GameBoardMediumDataService.swift in Sources */,
 				3B7201A8274807B1009903A5 /* tic_tac_toe_ios_multiplayer_game.xcdatamodeld in Sources */,
 				3B7201E227481301009903A5 /* SplashScreenViewController.swift in Sources */,
 				3BAB58CC2749315B00508CBF /* GameDifficultyLevelsViewController.swift in Sources */,
@@ -854,6 +861,7 @@
 				3BFCC7932756B51F00A5CF53 /* UITableViewCell+Extension.swift in Sources */,
 				3B7201A0274807B1009903A5 /* SceneDelegate.swift in Sources */,
 				3BAB58B92748F8E300508CBF /* GameModeNavigationController.swift in Sources */,
+				3B78034E2802D09500245DB0 /* GameBoardHardDataService.swift in Sources */,
 				3BBC287D27499B4700179C8E /* GameBoardViewModel.swift in Sources */,
 				3B7201ED274864E9009903A5 /* GradientView.swift in Sources */,
 				3BBC28752749833D00179C8E /* UICollectionViewCell+Extension.swift in Sources */,
@@ -1047,7 +1055,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = J4383386FU;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "tic-tac-toe-ios-multiplayer-game/Supporting Files/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Tic Tac Toe";
@@ -1076,7 +1084,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = J4383386FU;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "tic-tac-toe-ios-multiplayer-game/Supporting Files/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Tic Tac Toe";
