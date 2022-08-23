@@ -17,6 +17,12 @@
 		3B436DCB2757ED8600D6D8AE /* OnlineGameBoardDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B436DCA2757ED8600D6D8AE /* OnlineGameBoardDataService.swift */; };
 		3B436DCD2757EDC400D6D8AE /* OnlineGameBoardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B436DCC2757EDC400D6D8AE /* OnlineGameBoardViewModel.swift */; };
 		3B5F0E7727559C6B008DAFAC /* OnlinePlayersListNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5F0E7627559C6B008DAFAC /* OnlinePlayersListNavigationController.swift */; };
+		3B68C41F28B4B26E00AB864C /* UITestsBaseRunner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B68C41E28B4B26E00AB864C /* UITestsBaseRunner.swift */; };
+		3B68C42128B4B2B000AB864C /* Actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B68C42028B4B2B000AB864C /* Actions.swift */; };
+		3B68C42328B4B2E000AB864C /* ZephyrScaleJiraApiTCStatusUpdate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B68C42228B4B2E000AB864C /* ZephyrScaleJiraApiTCStatusUpdate.swift */; };
+		3B68C42528B4B30200AB864C /* ZephyrScaleJiraApiTCStatusUpdateObservation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B68C42428B4B30200AB864C /* ZephyrScaleJiraApiTCStatusUpdateObservation.swift */; };
+		3B68C42728B4B45000AB864C /* GameModesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B68C42628B4B45000AB864C /* GameModesUITests.swift */; };
+		3B68C42928B4B4C200AB864C /* GameModesPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B68C42828B4B4C200AB864C /* GameModesPage.swift */; };
 		3B72019E274807B1009903A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B72019D274807B1009903A5 /* AppDelegate.swift */; };
 		3B7201A0274807B1009903A5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B72019F274807B1009903A5 /* SceneDelegate.swift */; };
 		3B7201A8274807B1009903A5 /* tic_tac_toe_ios_multiplayer_game.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3B7201A6274807B1009903A5 /* tic_tac_toe_ios_multiplayer_game.xcdatamodeld */; };
@@ -120,6 +126,12 @@
 		3B436DCA2757ED8600D6D8AE /* OnlineGameBoardDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlineGameBoardDataService.swift; sourceTree = "<group>"; };
 		3B436DCC2757EDC400D6D8AE /* OnlineGameBoardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlineGameBoardViewModel.swift; sourceTree = "<group>"; };
 		3B5F0E7627559C6B008DAFAC /* OnlinePlayersListNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlinePlayersListNavigationController.swift; sourceTree = "<group>"; };
+		3B68C41E28B4B26E00AB864C /* UITestsBaseRunner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITestsBaseRunner.swift; sourceTree = "<group>"; };
+		3B68C42028B4B2B000AB864C /* Actions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Actions.swift; sourceTree = "<group>"; };
+		3B68C42228B4B2E000AB864C /* ZephyrScaleJiraApiTCStatusUpdate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZephyrScaleJiraApiTCStatusUpdate.swift; sourceTree = "<group>"; };
+		3B68C42428B4B30200AB864C /* ZephyrScaleJiraApiTCStatusUpdateObservation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZephyrScaleJiraApiTCStatusUpdateObservation.swift; sourceTree = "<group>"; };
+		3B68C42628B4B45000AB864C /* GameModesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModesUITests.swift; sourceTree = "<group>"; };
+		3B68C42828B4B4C200AB864C /* GameModesPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModesPage.swift; sourceTree = "<group>"; };
 		3B72019A274807B1009903A5 /* tic-tac-toe-ios-multiplayer-game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "tic-tac-toe-ios-multiplayer-game.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B72019D274807B1009903A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3B72019F274807B1009903A5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -286,6 +298,49 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		3B68C41928B4B1D200AB864C /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				3B7201C1274807B4009903A5 /* tic_tac_toe_ios_multiplayer_gameUITests.swift */,
+				3B7201C3274807B4009903A5 /* tic_tac_toe_ios_multiplayer_gameUITestsLaunchTests.swift */,
+				3B68C42628B4B45000AB864C /* GameModesUITests.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		3B68C41A28B4B1E300AB864C /* Steps */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Steps;
+			sourceTree = "<group>";
+		};
+		3B68C41B28B4B1F000AB864C /* Pages */ = {
+			isa = PBXGroup;
+			children = (
+				3B68C42828B4B4C200AB864C /* GameModesPage.swift */,
+			);
+			path = Pages;
+			sourceTree = "<group>";
+		};
+		3B68C41C28B4B20300AB864C /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				3B68C41E28B4B26E00AB864C /* UITestsBaseRunner.swift */,
+				3B68C42028B4B2B000AB864C /* Actions.swift */,
+				3B68C42228B4B2E000AB864C /* ZephyrScaleJiraApiTCStatusUpdate.swift */,
+				3B68C42428B4B30200AB864C /* ZephyrScaleJiraApiTCStatusUpdateObservation.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		3B68C41D28B4B21300AB864C /* TestData */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TestData;
+			sourceTree = "<group>";
+		};
 		3B720191274807B1009903A5 = {
 			isa = PBXGroup;
 			children = (
@@ -329,8 +384,11 @@
 		3B7201C0274807B4009903A5 /* tic-tac-toe-ios-multiplayer-gameUITests */ = {
 			isa = PBXGroup;
 			children = (
-				3B7201C1274807B4009903A5 /* tic_tac_toe_ios_multiplayer_gameUITests.swift */,
-				3B7201C3274807B4009903A5 /* tic_tac_toe_ios_multiplayer_gameUITestsLaunchTests.swift */,
+				3B68C41D28B4B21300AB864C /* TestData */,
+				3B68C41C28B4B20300AB864C /* Helpers */,
+				3B68C41B28B4B1F000AB864C /* Pages */,
+				3B68C41A28B4B1E300AB864C /* Steps */,
+				3B68C41928B4B1D200AB864C /* Tests */,
 			);
 			path = "tic-tac-toe-ios-multiplayer-gameUITests";
 			sourceTree = "<group>";
@@ -900,6 +958,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B68C41F28B4B26E00AB864C /* UITestsBaseRunner.swift in Sources */,
+				3B68C42328B4B2E000AB864C /* ZephyrScaleJiraApiTCStatusUpdate.swift in Sources */,
+				3B68C42528B4B30200AB864C /* ZephyrScaleJiraApiTCStatusUpdateObservation.swift in Sources */,
+				3B68C42728B4B45000AB864C /* GameModesUITests.swift in Sources */,
+				3B68C42128B4B2B000AB864C /* Actions.swift in Sources */,
+				3B68C42928B4B4C200AB864C /* GameModesPage.swift in Sources */,
 				3B7201C4274807B4009903A5 /* tic_tac_toe_ios_multiplayer_gameUITestsLaunchTests.swift in Sources */,
 				3B7201C2274807B4009903A5 /* tic_tac_toe_ios_multiplayer_gameUITests.swift in Sources */,
 			);
