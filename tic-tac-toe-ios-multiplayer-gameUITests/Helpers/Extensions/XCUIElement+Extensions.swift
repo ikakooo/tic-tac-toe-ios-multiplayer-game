@@ -1,5 +1,5 @@
 //
-//  Actions.swift
+//  XCUIElement+Extensions.swift
 //  tic-tac-toe-ios-multiplayer-gameUITests
 //
 //  Created by Irakli Chkhitunidzde on 23.08.22.

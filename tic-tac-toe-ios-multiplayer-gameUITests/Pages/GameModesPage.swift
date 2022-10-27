@@ -7,7 +7,15 @@
 
 import XCTest
 
-class GameModesPage: UITestsBaseRunner {
+protocol GameModesPage{
+    var singlePlayerButton: XCUIElement { get }
+    var backButton: XCUIElement { get }
+    var multiplayerButton: XCUIElement { get }
+    var localMultiplayerButton: XCUIElement { get }
+    var themesButton: XCUIElement { get }
+}
+
+extension GameModesPage {
     var singlePlayerButton: XCUIElement { app.staticTexts["Single Player"] }
     var backButton: XCUIElement { app.buttons["Back"] }
     var multiplayerButton: XCUIElement { app.buttons["Multiplayer"] }

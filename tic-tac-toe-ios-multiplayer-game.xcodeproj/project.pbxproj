@@ -17,8 +17,7 @@
 		3B436DCB2757ED8600D6D8AE /* OnlineGameBoardDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B436DCA2757ED8600D6D8AE /* OnlineGameBoardDataService.swift */; };
 		3B436DCD2757EDC400D6D8AE /* OnlineGameBoardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B436DCC2757EDC400D6D8AE /* OnlineGameBoardViewModel.swift */; };
 		3B5F0E7727559C6B008DAFAC /* OnlinePlayersListNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5F0E7627559C6B008DAFAC /* OnlinePlayersListNavigationController.swift */; };
-		3B68C41F28B4B26E00AB864C /* UITestsBaseRunner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B68C41E28B4B26E00AB864C /* UITestsBaseRunner.swift */; };
-		3B68C42128B4B2B000AB864C /* Actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B68C42028B4B2B000AB864C /* Actions.swift */; };
+		3B68C42128B4B2B000AB864C /* XCUIElement+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B68C42028B4B2B000AB864C /* XCUIElement+Extensions.swift */; };
 		3B68C42328B4B2E000AB864C /* ZephyrScaleJiraApiTCStatusUpdate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B68C42228B4B2E000AB864C /* ZephyrScaleJiraApiTCStatusUpdate.swift */; };
 		3B68C42528B4B30200AB864C /* ZephyrScaleJiraApiTCStatusUpdateObservation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B68C42428B4B30200AB864C /* ZephyrScaleJiraApiTCStatusUpdateObservation.swift */; };
 		3B68C42728B4B45000AB864C /* GameModesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B68C42628B4B45000AB864C /* GameModesUITests.swift */; };
@@ -57,6 +56,8 @@
 		3BBC28812749ACC500179C8E /* ToeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBC287F2749ACC500179C8E /* ToeCollectionViewCell.swift */; };
 		3BBC28822749ACC500179C8E /* ToeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3BBC28802749ACC500179C8E /* ToeCollectionViewCell.xib */; };
 		3BD24062274DC34000B0B661 /* GameBoardBotProfileSetUpDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD24061274DC34000B0B661 /* GameBoardBotProfileSetUpDataService.swift */; };
+		3BD2AF18290A202A00D33214 /* XCTestCase+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD2AF17290A202A00D33214 /* XCTestCase+Extensions.swift */; };
+		3BD2AF1A290A26F000D33214 /* AppDelegate+UITesting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD2AF19290A26F000D33214 /* AppDelegate+UITesting.swift */; };
 		3BEB8E3A2753BEB7009A3DFF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3BEB8E392753BEB7009A3DFF /* GoogleService-Info.plist */; };
 		3BEB8E3D2753C1B4009A3DFF /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 3BEB8E3C2753C1B4009A3DFF /* FirebaseAnalytics */; };
 		3BEB8E3F2753C1B4009A3DFF /* FirebaseAnalyticsSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 3BEB8E3E2753C1B4009A3DFF /* FirebaseAnalyticsSwift-Beta */; };
@@ -126,8 +127,7 @@
 		3B436DCA2757ED8600D6D8AE /* OnlineGameBoardDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlineGameBoardDataService.swift; sourceTree = "<group>"; };
 		3B436DCC2757EDC400D6D8AE /* OnlineGameBoardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlineGameBoardViewModel.swift; sourceTree = "<group>"; };
 		3B5F0E7627559C6B008DAFAC /* OnlinePlayersListNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlinePlayersListNavigationController.swift; sourceTree = "<group>"; };
-		3B68C41E28B4B26E00AB864C /* UITestsBaseRunner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITestsBaseRunner.swift; sourceTree = "<group>"; };
-		3B68C42028B4B2B000AB864C /* Actions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Actions.swift; sourceTree = "<group>"; };
+		3B68C42028B4B2B000AB864C /* XCUIElement+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCUIElement+Extensions.swift"; sourceTree = "<group>"; };
 		3B68C42228B4B2E000AB864C /* ZephyrScaleJiraApiTCStatusUpdate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZephyrScaleJiraApiTCStatusUpdate.swift; sourceTree = "<group>"; };
 		3B68C42428B4B30200AB864C /* ZephyrScaleJiraApiTCStatusUpdateObservation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZephyrScaleJiraApiTCStatusUpdateObservation.swift; sourceTree = "<group>"; };
 		3B68C42628B4B45000AB864C /* GameModesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModesUITests.swift; sourceTree = "<group>"; };
@@ -170,6 +170,8 @@
 		3BBC287F2749ACC500179C8E /* ToeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToeCollectionViewCell.swift; sourceTree = "<group>"; };
 		3BBC28802749ACC500179C8E /* ToeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ToeCollectionViewCell.xib; sourceTree = "<group>"; };
 		3BD24061274DC34000B0B661 /* GameBoardBotProfileSetUpDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameBoardBotProfileSetUpDataService.swift; sourceTree = "<group>"; };
+		3BD2AF17290A202A00D33214 /* XCTestCase+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+Extensions.swift"; sourceTree = "<group>"; };
+		3BD2AF19290A26F000D33214 /* AppDelegate+UITesting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+UITesting.swift"; sourceTree = "<group>"; };
 		3BEB8E392753BEB7009A3DFF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		3BEB8E672753C842009A3DFF /* OnlinePlayersListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlinePlayersListViewController.swift; sourceTree = "<group>"; };
 		3BEB8E692753C84C009A3DFF /* OnlinePlayersListViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OnlinePlayersListViewController.storyboard; sourceTree = "<group>"; };
@@ -326,8 +328,7 @@
 		3B68C41C28B4B20300AB864C /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				3B68C41E28B4B26E00AB864C /* UITestsBaseRunner.swift */,
-				3B68C42028B4B2B000AB864C /* Actions.swift */,
+				3BD2AF16290A200700D33214 /* Extensions */,
 				3B68C42228B4B2E000AB864C /* ZephyrScaleJiraApiTCStatusUpdate.swift */,
 				3B68C42428B4B30200AB864C /* ZephyrScaleJiraApiTCStatusUpdateObservation.swift */,
 			);
@@ -436,6 +437,7 @@
 			children = (
 				3B72019D274807B1009903A5 /* AppDelegate.swift */,
 				3B72019F274807B1009903A5 /* SceneDelegate.swift */,
+				3BD2AF19290A26F000D33214 /* AppDelegate+UITesting.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -637,6 +639,15 @@
 				3BBC28802749ACC500179C8E /* ToeCollectionViewCell.xib */,
 			);
 			path = "Toe Cell";
+			sourceTree = "<group>";
+		};
+		3BD2AF16290A200700D33214 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3BD2AF17290A202A00D33214 /* XCTestCase+Extensions.swift */,
+				3B68C42028B4B2B000AB864C /* XCUIElement+Extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		3BEB8E662753C80A009A3DFF /* Online Players List Scene */ = {
@@ -901,6 +912,7 @@
 				3B436DCD2757EDC400D6D8AE /* OnlineGameBoardViewModel.swift in Sources */,
 				3B7201E627481A87009903A5 /* UIView+Extensions.swift in Sources */,
 				3BAB58C32749038C00508CBF /* SplashScreenDataService.swift in Sources */,
+				3BD2AF1A290A26F000D33214 /* AppDelegate+UITesting.swift in Sources */,
 				3BBC287B274999EB00179C8E /* GameBoardDataService.swift in Sources */,
 				3BEB8E722753D307009A3DFF /* LogInViewDataService.swift in Sources */,
 				3B198CB3275237AF006B61C8 /* DialogAlertsForActions.swift in Sources */,
@@ -958,11 +970,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B68C41F28B4B26E00AB864C /* UITestsBaseRunner.swift in Sources */,
 				3B68C42328B4B2E000AB864C /* ZephyrScaleJiraApiTCStatusUpdate.swift in Sources */,
 				3B68C42528B4B30200AB864C /* ZephyrScaleJiraApiTCStatusUpdateObservation.swift in Sources */,
 				3B68C42728B4B45000AB864C /* GameModesUITests.swift in Sources */,
-				3B68C42128B4B2B000AB864C /* Actions.swift in Sources */,
+				3BD2AF18290A202A00D33214 /* XCTestCase+Extensions.swift in Sources */,
+				3B68C42128B4B2B000AB864C /* XCUIElement+Extensions.swift in Sources */,
 				3B68C42928B4B4C200AB864C /* GameModesPage.swift in Sources */,
 				3B7201C4274807B4009903A5 /* tic_tac_toe_ios_multiplayer_gameUITestsLaunchTests.swift in Sources */,
 				3B7201C2274807B4009903A5 /* tic_tac_toe_ios_multiplayer_gameUITests.swift in Sources */,
@@ -1128,6 +1140,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = SplashScreenViewController;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1157,6 +1170,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = SplashScreenViewController;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

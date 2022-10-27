@@ -7,7 +7,7 @@
 
 import XCTest
 
-class GameModesUITests: GameModesPage {
+class GameModesUITests: XCTestCase, GameModesPage {
     
     func testSinglePlayerButtonVisible_T2132() {
         singlePlayerButton.waitForViewVisibleStrictly(timeOutIfNotExitInSec: generalTimeout)

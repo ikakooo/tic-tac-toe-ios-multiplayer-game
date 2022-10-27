@@ -13,7 +13,7 @@ public class ZephyrScaleJiraApiTCStatusUpdateObservation: NSObject, XCTestObserv
     private let  password = ""
     // testRunKey რომელშიც მოხდება ქეისზე სტატუსის განახლება
     private let  testRunID = ""
-    private let  testingProject = "DMB-"
+    private let  testingProject = "SQDMP-"
     private var  testCaseID = ""
     
     let update = ZephyrScaleJiraApiTCStatusUpdate()

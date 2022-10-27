@@ -48,6 +48,8 @@ struct ZephyrScaleJiraApiTCStatusUpdate {
         
         // Create a task using the session object, to run and return completion handler
         let webTask = session.dataTask(with: request, completionHandler: { data, response, error in
+            completion()
+            
             guard error == nil else {
                 print(error?.localizedDescription ?? "Response Error")
                 return
@@ -57,7 +59,7 @@ struct ZephyrScaleJiraApiTCStatusUpdate {
                 print("server data error")
                 return
             }
-            completion()
+            
             do {
                 if let httpResponse = response as? HTTPURLResponse {
                     print("statusCode: \(httpResponse.statusCode)")
