@@ -150,7 +150,7 @@ extension OnlineGameBoardDataService: UICollectionViewDelegateFlowLayout {
             print(winner)
             
             switch winner {
-            case myToe:
+            case self.myToe:
                 self.controller.openAlert(title: "You Won!", message: "", closeButtonTitle: "Restart"){
                     self.toes = ["","","","","","","","",""]
                     self.controller.navigationController?.popViewController(animated: true)
